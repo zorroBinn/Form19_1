@@ -43,14 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox_data_S = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox_data_PO = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox_data_GODA = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label_dolzhnost = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -59,16 +52,28 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBox_FIO = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox_DAY = new System.Windows.Forms.TextBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox_MONTH = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox_GOD2 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EI_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kodOKEI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.POL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VOZVR1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LOM1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NEDO1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.POL2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VOZVR2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LOM2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NEDO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.POL3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VOZVR3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LOM3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NEDO3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.POL4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VOZVR4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LOM4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NEDO4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel_Head = new System.Windows.Forms.TableLayoutPanel();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -128,44 +133,29 @@
             this.textBox_rashifr = new System.Windows.Forms.TextBox();
             this.button_form = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label_POL1 = new System.Windows.Forms.Label();
-            this.label_VOZVR1 = new System.Windows.Forms.Label();
-            this.label_LOM1 = new System.Windows.Forms.Label();
-            this.label_NEDO1 = new System.Windows.Forms.Label();
-            this.label_POL2 = new System.Windows.Forms.Label();
-            this.label_VOZVR2 = new System.Windows.Forms.Label();
-            this.label_LOM2 = new System.Windows.Forms.Label();
-            this.label_NEDO2 = new System.Windows.Forms.Label();
-            this.label_POL3 = new System.Windows.Forms.Label();
-            this.label_VOZVR3 = new System.Windows.Forms.Label();
-            this.label_LOM3 = new System.Windows.Forms.Label();
-            this.label_NEDO3 = new System.Windows.Forms.Label();
-            this.label_POL4 = new System.Windows.Forms.Label();
-            this.label_VOZVR4 = new System.Windows.Forms.Label();
-            this.label_LOM4 = new System.Windows.Forms.Label();
             this.label_NEDO4 = new System.Windows.Forms.Label();
-            this.nomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EI_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kodOKEI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VOZVR1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LOM1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NEDO1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POL2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VOZVR2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LOM2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NEDO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POL3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VOZVR3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LOM3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NEDO3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POL4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VOZVR4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LOM4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NEDO4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label_LOM4 = new System.Windows.Forms.Label();
+            this.label_VOZVR4 = new System.Windows.Forms.Label();
+            this.label_POL4 = new System.Windows.Forms.Label();
+            this.label_NEDO3 = new System.Windows.Forms.Label();
+            this.label_LOM3 = new System.Windows.Forms.Label();
+            this.label_VOZVR3 = new System.Windows.Forms.Label();
+            this.label_POL3 = new System.Windows.Forms.Label();
+            this.label_NEDO2 = new System.Windows.Forms.Label();
+            this.label_LOM2 = new System.Windows.Forms.Label();
+            this.label_VOZVR2 = new System.Windows.Forms.Label();
+            this.label_POL2 = new System.Windows.Forms.Label();
+            this.label_NEDO1 = new System.Windows.Forms.Label();
+            this.label_LOM1 = new System.Windows.Forms.Label();
+            this.label_VOZVR1 = new System.Windows.Forms.Label();
+            this.label_POL1 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.textBox_podpis = new System.Windows.Forms.TextBox();
+            this.dateTimePicker_S = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_PO = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel_Head.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -308,7 +298,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(546, 114);
+            this.label2.Location = new System.Drawing.Point(542, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 24);
             this.label2.TabIndex = 11;
@@ -319,7 +309,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(375, 138);
+            this.label3.Location = new System.Drawing.Point(371, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(469, 38);
             this.label3.TabIndex = 12;
@@ -331,108 +321,22 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(351, 181);
+            this.label4.Location = new System.Drawing.Point(333, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 17);
             this.label4.TabIndex = 13;
             this.label4.Text = "за период c";
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(440, 198);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(135, 1);
-            this.panel3.TabIndex = 15;
-            // 
-            // textBox_data_S
-            // 
-            this.textBox_data_S.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox_data_S.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_data_S.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox_data_S.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_data_S.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_data_S.Location = new System.Drawing.Point(440, 176);
-            this.textBox_data_S.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox_data_S.MaxLength = 12;
-            this.textBox_data_S.Name = "textBox_data_S";
-            this.textBox_data_S.Size = new System.Drawing.Size(134, 22);
-            this.textBox_data_S.TabIndex = 14;
-            this.textBox_data_S.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(600, 198);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(135, 1);
-            this.panel4.TabIndex = 17;
-            // 
-            // textBox_data_PO
-            // 
-            this.textBox_data_PO.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox_data_PO.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_data_PO.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox_data_PO.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_data_PO.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_data_PO.Location = new System.Drawing.Point(600, 176);
-            this.textBox_data_PO.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox_data_PO.MaxLength = 12;
-            this.textBox_data_PO.Name = "textBox_data_PO";
-            this.textBox_data_PO.Size = new System.Drawing.Size(134, 22);
-            this.textBox_data_PO.TabIndex = 16;
-            this.textBox_data_PO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(577, 181);
+            this.label5.Location = new System.Drawing.Point(631, 170);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(25, 17);
             this.label5.TabIndex = 18;
             this.label5.Text = "по";
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(748, 198);
-            this.panel5.Margin = new System.Windows.Forms.Padding(0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(73, 1);
-            this.panel5.TabIndex = 20;
-            // 
-            // textBox_data_GODA
-            // 
-            this.textBox_data_GODA.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox_data_GODA.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_data_GODA.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox_data_GODA.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_data_GODA.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_data_GODA.Location = new System.Drawing.Point(748, 176);
-            this.textBox_data_GODA.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox_data_GODA.MaxLength = 4;
-            this.textBox_data_GODA.Name = "textBox_data_GODA";
-            this.textBox_data_GODA.Size = new System.Drawing.Size(72, 22);
-            this.textBox_data_GODA.TabIndex = 19;
-            this.textBox_data_GODA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(824, 181);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 17);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "года";
             // 
             // label7
             // 
@@ -528,114 +432,6 @@
             this.panel8.Size = new System.Drawing.Size(1190, 1);
             this.panel8.TabIndex = 29;
             // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(869, 271);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(16, 17);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "«";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(919, 271);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(16, 17);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "»";
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Location = new System.Drawing.Point(888, 291);
-            this.panel9.Margin = new System.Windows.Forms.Padding(0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(29, 1);
-            this.panel9.TabIndex = 33;
-            // 
-            // textBox_DAY
-            // 
-            this.textBox_DAY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_DAY.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_DAY.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox_DAY.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_DAY.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_DAY.Location = new System.Drawing.Point(888, 269);
-            this.textBox_DAY.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox_DAY.MaxLength = 2;
-            this.textBox_DAY.Name = "textBox_DAY";
-            this.textBox_DAY.Size = new System.Drawing.Size(28, 22);
-            this.textBox_DAY.TabIndex = 32;
-            this.textBox_DAY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel10
-            // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Location = new System.Drawing.Point(938, 292);
-            this.panel10.Margin = new System.Windows.Forms.Padding(0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(106, 1);
-            this.panel10.TabIndex = 35;
-            // 
-            // textBox_MONTH
-            // 
-            this.textBox_MONTH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_MONTH.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_MONTH.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox_MONTH.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_MONTH.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_MONTH.Location = new System.Drawing.Point(938, 270);
-            this.textBox_MONTH.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox_MONTH.MaxLength = 10;
-            this.textBox_MONTH.Name = "textBox_MONTH";
-            this.textBox_MONTH.Size = new System.Drawing.Size(105, 22);
-            this.textBox_MONTH.TabIndex = 34;
-            this.textBox_MONTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(1131, 275);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 17);
-            this.label10.TabIndex = 38;
-            this.label10.Text = "года";
-            // 
-            // panel11
-            // 
-            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Location = new System.Drawing.Point(1055, 292);
-            this.panel11.Margin = new System.Windows.Forms.Padding(0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(73, 1);
-            this.panel11.TabIndex = 37;
-            // 
-            // textBox_GOD2
-            // 
-            this.textBox_GOD2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_GOD2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_GOD2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox_GOD2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_GOD2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_GOD2.Location = new System.Drawing.Point(1055, 270);
-            this.textBox_GOD2.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox_GOD2.MaxLength = 4;
-            this.textBox_GOD2.Name = "textBox_GOD2";
-            this.textBox_GOD2.Size = new System.Drawing.Size(72, 22);
-            this.textBox_GOD2.TabIndex = 36;
-            this.textBox_GOD2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // dataGridView1
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -673,6 +469,137 @@
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dataGridView1.Size = new System.Drawing.Size(1140, 279);
             this.dataGridView1.TabIndex = 39;
+            // 
+            // nomer
+            // 
+            this.nomer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nomer.Frozen = true;
+            this.nomer.HeaderText = "1";
+            this.nomer.Name = "nomer";
+            this.nomer.ReadOnly = true;
+            this.nomer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.nomer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.nomer.Width = 21;
+            // 
+            // name
+            // 
+            this.name.Frozen = true;
+            this.name.HeaderText = "2";
+            this.name.Name = "name";
+            // 
+            // kod
+            // 
+            this.kod.Frozen = true;
+            this.kod.HeaderText = "3";
+            this.kod.Name = "kod";
+            // 
+            // EI_name
+            // 
+            this.EI_name.Frozen = true;
+            this.EI_name.HeaderText = "4";
+            this.EI_name.Name = "EI_name";
+            // 
+            // kodOKEI
+            // 
+            this.kodOKEI.Frozen = true;
+            this.kodOKEI.HeaderText = "5";
+            this.kodOKEI.Name = "kodOKEI";
+            // 
+            // POL1
+            // 
+            this.POL1.Frozen = true;
+            this.POL1.HeaderText = "6";
+            this.POL1.Name = "POL1";
+            // 
+            // VOZVR1
+            // 
+            this.VOZVR1.Frozen = true;
+            this.VOZVR1.HeaderText = "7";
+            this.VOZVR1.Name = "VOZVR1";
+            // 
+            // LOM1
+            // 
+            this.LOM1.Frozen = true;
+            this.LOM1.HeaderText = "8";
+            this.LOM1.Name = "LOM1";
+            // 
+            // NEDO1
+            // 
+            this.NEDO1.Frozen = true;
+            this.NEDO1.HeaderText = "9";
+            this.NEDO1.Name = "NEDO1";
+            // 
+            // POL2
+            // 
+            this.POL2.Frozen = true;
+            this.POL2.HeaderText = "10";
+            this.POL2.Name = "POL2";
+            // 
+            // VOZVR2
+            // 
+            this.VOZVR2.Frozen = true;
+            this.VOZVR2.HeaderText = "11";
+            this.VOZVR2.Name = "VOZVR2";
+            // 
+            // LOM2
+            // 
+            this.LOM2.Frozen = true;
+            this.LOM2.HeaderText = "12";
+            this.LOM2.Name = "LOM2";
+            // 
+            // NEDO2
+            // 
+            this.NEDO2.Frozen = true;
+            this.NEDO2.HeaderText = "13";
+            this.NEDO2.Name = "NEDO2";
+            // 
+            // POL3
+            // 
+            this.POL3.Frozen = true;
+            this.POL3.HeaderText = "14";
+            this.POL3.Name = "POL3";
+            // 
+            // VOZVR3
+            // 
+            this.VOZVR3.Frozen = true;
+            this.VOZVR3.HeaderText = "15";
+            this.VOZVR3.Name = "VOZVR3";
+            // 
+            // LOM3
+            // 
+            this.LOM3.Frozen = true;
+            this.LOM3.HeaderText = "16";
+            this.LOM3.Name = "LOM3";
+            // 
+            // NEDO3
+            // 
+            this.NEDO3.Frozen = true;
+            this.NEDO3.HeaderText = "17";
+            this.NEDO3.Name = "NEDO3";
+            // 
+            // POL4
+            // 
+            this.POL4.Frozen = true;
+            this.POL4.HeaderText = "18";
+            this.POL4.Name = "POL4";
+            // 
+            // VOZVR4
+            // 
+            this.VOZVR4.Frozen = true;
+            this.VOZVR4.HeaderText = "19";
+            this.VOZVR4.Name = "VOZVR4";
+            // 
+            // LOM4
+            // 
+            this.LOM4.Frozen = true;
+            this.LOM4.HeaderText = "20";
+            this.LOM4.Name = "LOM4";
+            // 
+            // NEDO4
+            // 
+            this.NEDO4.Frozen = true;
+            this.NEDO4.HeaderText = "21";
+            this.NEDO4.Name = "NEDO4";
             // 
             // tableLayoutPanel_Head
             // 
@@ -1460,7 +1387,7 @@
             this.label55.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label55.Location = new System.Drawing.Point(25, 782);
+            this.label55.Location = new System.Drawing.Point(12, 779);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(225, 17);
             this.label55.TabIndex = 41;
@@ -1471,7 +1398,7 @@
             this.label56.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label56.Location = new System.Drawing.Point(361, 800);
+            this.label56.Location = new System.Drawing.Point(320, 798);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(65, 14);
             this.label56.TabIndex = 44;
@@ -1481,10 +1408,10 @@
             // 
             this.panel12.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Location = new System.Drawing.Point(253, 799);
+            this.panel12.Location = new System.Drawing.Point(240, 796);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(287, 1);
+            this.panel12.Size = new System.Drawing.Size(232, 1);
             this.panel12.TabIndex = 43;
             // 
             // textBox_dolzhnost2
@@ -1494,11 +1421,11 @@
             this.textBox_dolzhnost2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox_dolzhnost2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_dolzhnost2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_dolzhnost2.Location = new System.Drawing.Point(253, 777);
+            this.textBox_dolzhnost2.Location = new System.Drawing.Point(240, 774);
             this.textBox_dolzhnost2.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_dolzhnost2.MaxLength = 100;
             this.textBox_dolzhnost2.Name = "textBox_dolzhnost2";
-            this.textBox_dolzhnost2.Size = new System.Drawing.Size(286, 22);
+            this.textBox_dolzhnost2.Size = new System.Drawing.Size(232, 22);
             this.textBox_dolzhnost2.TabIndex = 42;
             this.textBox_dolzhnost2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1507,7 +1434,7 @@
             this.label57.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label57.Location = new System.Drawing.Point(660, 801);
+            this.label57.Location = new System.Drawing.Point(733, 798);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(122, 14);
             this.label57.TabIndex = 47;
@@ -1517,10 +1444,10 @@
             // 
             this.panel13.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Location = new System.Drawing.Point(550, 800);
+            this.panel13.Location = new System.Drawing.Point(655, 796);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(335, 1);
+            this.panel13.Size = new System.Drawing.Size(292, 1);
             this.panel13.TabIndex = 46;
             // 
             // textBox_rashifr
@@ -1530,11 +1457,11 @@
             this.textBox_rashifr.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox_rashifr.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_rashifr.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_rashifr.Location = new System.Drawing.Point(550, 778);
+            this.textBox_rashifr.Location = new System.Drawing.Point(655, 774);
             this.textBox_rashifr.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_rashifr.MaxLength = 150;
             this.textBox_rashifr.Name = "textBox_rashifr";
-            this.textBox_rashifr.Size = new System.Drawing.Size(334, 22);
+            this.textBox_rashifr.Size = new System.Drawing.Size(291, 22);
             this.textBox_rashifr.TabIndex = 45;
             this.textBox_rashifr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1544,9 +1471,9 @@
             this.button_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_form.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_form.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_form.Location = new System.Drawing.Point(929, 778);
+            this.button_form.Location = new System.Drawing.Point(962, 779);
             this.button_form.Name = "button_form";
-            this.button_form.Size = new System.Drawing.Size(243, 71);
+            this.button_form.Size = new System.Drawing.Size(210, 70);
             this.button_form.TabIndex = 48;
             this.button_form.Text = "Cформировать";
             this.button_form.UseVisualStyleBackColor = false;
@@ -1601,6 +1528,214 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1140, 40);
             this.tableLayoutPanel1.TabIndex = 49;
             // 
+            // label_NEDO4
+            // 
+            this.label_NEDO4.AutoSize = true;
+            this.label_NEDO4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_NEDO4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_NEDO4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_NEDO4.Location = new System.Drawing.Point(1093, 0);
+            this.label_NEDO4.Margin = new System.Windows.Forms.Padding(0);
+            this.label_NEDO4.Name = "label_NEDO4";
+            this.label_NEDO4.Size = new System.Drawing.Size(47, 40);
+            this.label_NEDO4.TabIndex = 48;
+            this.label_NEDO4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_LOM4
+            // 
+            this.label_LOM4.AutoSize = true;
+            this.label_LOM4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_LOM4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_LOM4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_LOM4.Location = new System.Drawing.Point(1048, 0);
+            this.label_LOM4.Margin = new System.Windows.Forms.Padding(0);
+            this.label_LOM4.Name = "label_LOM4";
+            this.label_LOM4.Size = new System.Drawing.Size(45, 40);
+            this.label_LOM4.TabIndex = 47;
+            this.label_LOM4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_VOZVR4
+            // 
+            this.label_VOZVR4.AutoSize = true;
+            this.label_VOZVR4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_VOZVR4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_VOZVR4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_VOZVR4.Location = new System.Drawing.Point(991, 0);
+            this.label_VOZVR4.Margin = new System.Windows.Forms.Padding(0);
+            this.label_VOZVR4.Name = "label_VOZVR4";
+            this.label_VOZVR4.Size = new System.Drawing.Size(57, 40);
+            this.label_VOZVR4.TabIndex = 46;
+            this.label_VOZVR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_POL4
+            // 
+            this.label_POL4.AutoSize = true;
+            this.label_POL4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_POL4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_POL4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_POL4.Location = new System.Drawing.Point(946, 0);
+            this.label_POL4.Margin = new System.Windows.Forms.Padding(0);
+            this.label_POL4.Name = "label_POL4";
+            this.label_POL4.Size = new System.Drawing.Size(45, 40);
+            this.label_POL4.TabIndex = 45;
+            this.label_POL4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_NEDO3
+            // 
+            this.label_NEDO3.AutoSize = true;
+            this.label_NEDO3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_NEDO3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_NEDO3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_NEDO3.Location = new System.Drawing.Point(901, 0);
+            this.label_NEDO3.Margin = new System.Windows.Forms.Padding(0);
+            this.label_NEDO3.Name = "label_NEDO3";
+            this.label_NEDO3.Size = new System.Drawing.Size(45, 40);
+            this.label_NEDO3.TabIndex = 44;
+            this.label_NEDO3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_LOM3
+            // 
+            this.label_LOM3.AutoSize = true;
+            this.label_LOM3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_LOM3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_LOM3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_LOM3.Location = new System.Drawing.Point(856, 0);
+            this.label_LOM3.Margin = new System.Windows.Forms.Padding(0);
+            this.label_LOM3.Name = "label_LOM3";
+            this.label_LOM3.Size = new System.Drawing.Size(45, 40);
+            this.label_LOM3.TabIndex = 43;
+            this.label_LOM3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_VOZVR3
+            // 
+            this.label_VOZVR3.AutoSize = true;
+            this.label_VOZVR3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_VOZVR3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_VOZVR3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_VOZVR3.Location = new System.Drawing.Point(799, 0);
+            this.label_VOZVR3.Margin = new System.Windows.Forms.Padding(0);
+            this.label_VOZVR3.Name = "label_VOZVR3";
+            this.label_VOZVR3.Size = new System.Drawing.Size(57, 40);
+            this.label_VOZVR3.TabIndex = 42;
+            this.label_VOZVR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_POL3
+            // 
+            this.label_POL3.AutoSize = true;
+            this.label_POL3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_POL3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_POL3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_POL3.Location = new System.Drawing.Point(754, 0);
+            this.label_POL3.Margin = new System.Windows.Forms.Padding(0);
+            this.label_POL3.Name = "label_POL3";
+            this.label_POL3.Size = new System.Drawing.Size(45, 40);
+            this.label_POL3.TabIndex = 41;
+            this.label_POL3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_NEDO2
+            // 
+            this.label_NEDO2.AutoSize = true;
+            this.label_NEDO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_NEDO2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_NEDO2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_NEDO2.Location = new System.Drawing.Point(709, 0);
+            this.label_NEDO2.Margin = new System.Windows.Forms.Padding(0);
+            this.label_NEDO2.Name = "label_NEDO2";
+            this.label_NEDO2.Size = new System.Drawing.Size(45, 40);
+            this.label_NEDO2.TabIndex = 40;
+            this.label_NEDO2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_LOM2
+            // 
+            this.label_LOM2.AutoSize = true;
+            this.label_LOM2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_LOM2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_LOM2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_LOM2.Location = new System.Drawing.Point(664, 0);
+            this.label_LOM2.Margin = new System.Windows.Forms.Padding(0);
+            this.label_LOM2.Name = "label_LOM2";
+            this.label_LOM2.Size = new System.Drawing.Size(45, 40);
+            this.label_LOM2.TabIndex = 39;
+            this.label_LOM2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_VOZVR2
+            // 
+            this.label_VOZVR2.AutoSize = true;
+            this.label_VOZVR2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_VOZVR2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_VOZVR2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_VOZVR2.Location = new System.Drawing.Point(607, 0);
+            this.label_VOZVR2.Margin = new System.Windows.Forms.Padding(0);
+            this.label_VOZVR2.Name = "label_VOZVR2";
+            this.label_VOZVR2.Size = new System.Drawing.Size(57, 40);
+            this.label_VOZVR2.TabIndex = 38;
+            this.label_VOZVR2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_POL2
+            // 
+            this.label_POL2.AutoSize = true;
+            this.label_POL2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_POL2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_POL2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_POL2.Location = new System.Drawing.Point(562, 0);
+            this.label_POL2.Margin = new System.Windows.Forms.Padding(0);
+            this.label_POL2.Name = "label_POL2";
+            this.label_POL2.Size = new System.Drawing.Size(45, 40);
+            this.label_POL2.TabIndex = 37;
+            this.label_POL2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_NEDO1
+            // 
+            this.label_NEDO1.AutoSize = true;
+            this.label_NEDO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_NEDO1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_NEDO1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_NEDO1.Location = new System.Drawing.Point(517, 0);
+            this.label_NEDO1.Margin = new System.Windows.Forms.Padding(0);
+            this.label_NEDO1.Name = "label_NEDO1";
+            this.label_NEDO1.Size = new System.Drawing.Size(45, 40);
+            this.label_NEDO1.TabIndex = 36;
+            this.label_NEDO1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_LOM1
+            // 
+            this.label_LOM1.AutoSize = true;
+            this.label_LOM1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_LOM1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_LOM1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_LOM1.Location = new System.Drawing.Point(472, 0);
+            this.label_LOM1.Margin = new System.Windows.Forms.Padding(0);
+            this.label_LOM1.Name = "label_LOM1";
+            this.label_LOM1.Size = new System.Drawing.Size(45, 40);
+            this.label_LOM1.TabIndex = 35;
+            this.label_LOM1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_VOZVR1
+            // 
+            this.label_VOZVR1.AutoSize = true;
+            this.label_VOZVR1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_VOZVR1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_VOZVR1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_VOZVR1.Location = new System.Drawing.Point(415, 0);
+            this.label_VOZVR1.Margin = new System.Windows.Forms.Padding(0);
+            this.label_VOZVR1.Name = "label_VOZVR1";
+            this.label_VOZVR1.Size = new System.Drawing.Size(57, 40);
+            this.label_VOZVR1.TabIndex = 34;
+            this.label_VOZVR1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_POL1
+            // 
+            this.label_POL1.AutoSize = true;
+            this.label_POL1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_POL1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_POL1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_POL1.Location = new System.Drawing.Point(370, 0);
+            this.label_POL1.Margin = new System.Windows.Forms.Padding(0);
+            this.label_POL1.Name = "label_POL1";
+            this.label_POL1.Size = new System.Drawing.Size(45, 40);
+            this.label_POL1.TabIndex = 33;
+            this.label_POL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label58
             // 
             this.label58.AutoSize = true;
@@ -1616,350 +1751,97 @@
             this.label58.Text = "Получено, возвращено, бой лом, недостача";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label_POL1
-            // 
-            this.label_POL1.AutoSize = true;
-            this.label_POL1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_POL1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_POL1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_POL1.Location = new System.Drawing.Point(370, 0);
-            this.label_POL1.Margin = new System.Windows.Forms.Padding(0);
-            this.label_POL1.Name = "label_POL1";
-            this.label_POL1.Size = new System.Drawing.Size(45, 40);
-            this.label_POL1.TabIndex = 33;
-            this.label_POL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_VOZVR1
-            // 
-            this.label_VOZVR1.AutoSize = true;
-            this.label_VOZVR1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_VOZVR1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_VOZVR1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_VOZVR1.Location = new System.Drawing.Point(415, 0);
-            this.label_VOZVR1.Margin = new System.Windows.Forms.Padding(0);
-            this.label_VOZVR1.Name = "label_VOZVR1";
-            this.label_VOZVR1.Size = new System.Drawing.Size(57, 40);
-            this.label_VOZVR1.TabIndex = 34;
-            this.label_VOZVR1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_LOM1
-            // 
-            this.label_LOM1.AutoSize = true;
-            this.label_LOM1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_LOM1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_LOM1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_LOM1.Location = new System.Drawing.Point(472, 0);
-            this.label_LOM1.Margin = new System.Windows.Forms.Padding(0);
-            this.label_LOM1.Name = "label_LOM1";
-            this.label_LOM1.Size = new System.Drawing.Size(45, 40);
-            this.label_LOM1.TabIndex = 35;
-            this.label_LOM1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_NEDO1
-            // 
-            this.label_NEDO1.AutoSize = true;
-            this.label_NEDO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_NEDO1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_NEDO1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_NEDO1.Location = new System.Drawing.Point(517, 0);
-            this.label_NEDO1.Margin = new System.Windows.Forms.Padding(0);
-            this.label_NEDO1.Name = "label_NEDO1";
-            this.label_NEDO1.Size = new System.Drawing.Size(45, 40);
-            this.label_NEDO1.TabIndex = 36;
-            this.label_NEDO1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_POL2
-            // 
-            this.label_POL2.AutoSize = true;
-            this.label_POL2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_POL2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_POL2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_POL2.Location = new System.Drawing.Point(562, 0);
-            this.label_POL2.Margin = new System.Windows.Forms.Padding(0);
-            this.label_POL2.Name = "label_POL2";
-            this.label_POL2.Size = new System.Drawing.Size(45, 40);
-            this.label_POL2.TabIndex = 37;
-            this.label_POL2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_VOZVR2
-            // 
-            this.label_VOZVR2.AutoSize = true;
-            this.label_VOZVR2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_VOZVR2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_VOZVR2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_VOZVR2.Location = new System.Drawing.Point(607, 0);
-            this.label_VOZVR2.Margin = new System.Windows.Forms.Padding(0);
-            this.label_VOZVR2.Name = "label_VOZVR2";
-            this.label_VOZVR2.Size = new System.Drawing.Size(57, 40);
-            this.label_VOZVR2.TabIndex = 38;
-            this.label_VOZVR2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_LOM2
-            // 
-            this.label_LOM2.AutoSize = true;
-            this.label_LOM2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_LOM2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_LOM2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_LOM2.Location = new System.Drawing.Point(664, 0);
-            this.label_LOM2.Margin = new System.Windows.Forms.Padding(0);
-            this.label_LOM2.Name = "label_LOM2";
-            this.label_LOM2.Size = new System.Drawing.Size(45, 40);
-            this.label_LOM2.TabIndex = 39;
-            this.label_LOM2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_NEDO2
-            // 
-            this.label_NEDO2.AutoSize = true;
-            this.label_NEDO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_NEDO2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_NEDO2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_NEDO2.Location = new System.Drawing.Point(709, 0);
-            this.label_NEDO2.Margin = new System.Windows.Forms.Padding(0);
-            this.label_NEDO2.Name = "label_NEDO2";
-            this.label_NEDO2.Size = new System.Drawing.Size(45, 40);
-            this.label_NEDO2.TabIndex = 40;
-            this.label_NEDO2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_POL3
-            // 
-            this.label_POL3.AutoSize = true;
-            this.label_POL3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_POL3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_POL3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_POL3.Location = new System.Drawing.Point(754, 0);
-            this.label_POL3.Margin = new System.Windows.Forms.Padding(0);
-            this.label_POL3.Name = "label_POL3";
-            this.label_POL3.Size = new System.Drawing.Size(45, 40);
-            this.label_POL3.TabIndex = 41;
-            this.label_POL3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_VOZVR3
-            // 
-            this.label_VOZVR3.AutoSize = true;
-            this.label_VOZVR3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_VOZVR3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_VOZVR3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_VOZVR3.Location = new System.Drawing.Point(799, 0);
-            this.label_VOZVR3.Margin = new System.Windows.Forms.Padding(0);
-            this.label_VOZVR3.Name = "label_VOZVR3";
-            this.label_VOZVR3.Size = new System.Drawing.Size(57, 40);
-            this.label_VOZVR3.TabIndex = 42;
-            this.label_VOZVR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_LOM3
-            // 
-            this.label_LOM3.AutoSize = true;
-            this.label_LOM3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_LOM3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_LOM3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_LOM3.Location = new System.Drawing.Point(856, 0);
-            this.label_LOM3.Margin = new System.Windows.Forms.Padding(0);
-            this.label_LOM3.Name = "label_LOM3";
-            this.label_LOM3.Size = new System.Drawing.Size(45, 40);
-            this.label_LOM3.TabIndex = 43;
-            this.label_LOM3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_NEDO3
-            // 
-            this.label_NEDO3.AutoSize = true;
-            this.label_NEDO3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_NEDO3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_NEDO3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_NEDO3.Location = new System.Drawing.Point(901, 0);
-            this.label_NEDO3.Margin = new System.Windows.Forms.Padding(0);
-            this.label_NEDO3.Name = "label_NEDO3";
-            this.label_NEDO3.Size = new System.Drawing.Size(45, 40);
-            this.label_NEDO3.TabIndex = 44;
-            this.label_NEDO3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_POL4
-            // 
-            this.label_POL4.AutoSize = true;
-            this.label_POL4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_POL4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_POL4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_POL4.Location = new System.Drawing.Point(946, 0);
-            this.label_POL4.Margin = new System.Windows.Forms.Padding(0);
-            this.label_POL4.Name = "label_POL4";
-            this.label_POL4.Size = new System.Drawing.Size(45, 40);
-            this.label_POL4.TabIndex = 45;
-            this.label_POL4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_VOZVR4
-            // 
-            this.label_VOZVR4.AutoSize = true;
-            this.label_VOZVR4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_VOZVR4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_VOZVR4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_VOZVR4.Location = new System.Drawing.Point(991, 0);
-            this.label_VOZVR4.Margin = new System.Windows.Forms.Padding(0);
-            this.label_VOZVR4.Name = "label_VOZVR4";
-            this.label_VOZVR4.Size = new System.Drawing.Size(57, 40);
-            this.label_VOZVR4.TabIndex = 46;
-            this.label_VOZVR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_LOM4
-            // 
-            this.label_LOM4.AutoSize = true;
-            this.label_LOM4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_LOM4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_LOM4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_LOM4.Location = new System.Drawing.Point(1048, 0);
-            this.label_LOM4.Margin = new System.Windows.Forms.Padding(0);
-            this.label_LOM4.Name = "label_LOM4";
-            this.label_LOM4.Size = new System.Drawing.Size(45, 40);
-            this.label_LOM4.TabIndex = 47;
-            this.label_LOM4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_NEDO4
-            // 
-            this.label_NEDO4.AutoSize = true;
-            this.label_NEDO4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_NEDO4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_NEDO4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_NEDO4.Location = new System.Drawing.Point(1093, 0);
-            this.label_NEDO4.Margin = new System.Windows.Forms.Padding(0);
-            this.label_NEDO4.Name = "label_NEDO4";
-            this.label_NEDO4.Size = new System.Drawing.Size(47, 40);
-            this.label_NEDO4.TabIndex = 48;
-            this.label_NEDO4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // nomer
-            // 
-            this.nomer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nomer.Frozen = true;
-            this.nomer.HeaderText = "1";
-            this.nomer.Name = "nomer";
-            this.nomer.ReadOnly = true;
-            this.nomer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.nomer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.nomer.Width = 21;
-            // 
-            // name
-            // 
-            this.name.Frozen = true;
-            this.name.HeaderText = "2";
-            this.name.Name = "name";
-            // 
-            // kod
-            // 
-            this.kod.Frozen = true;
-            this.kod.HeaderText = "3";
-            this.kod.Name = "kod";
-            // 
-            // EI_name
-            // 
-            this.EI_name.Frozen = true;
-            this.EI_name.HeaderText = "4";
-            this.EI_name.Name = "EI_name";
-            // 
-            // kodOKEI
-            // 
-            this.kodOKEI.Frozen = true;
-            this.kodOKEI.HeaderText = "5";
-            this.kodOKEI.Name = "kodOKEI";
-            // 
-            // POL1
-            // 
-            this.POL1.Frozen = true;
-            this.POL1.HeaderText = "6";
-            this.POL1.Name = "POL1";
-            // 
-            // VOZVR1
-            // 
-            this.VOZVR1.Frozen = true;
-            this.VOZVR1.HeaderText = "7";
-            this.VOZVR1.Name = "VOZVR1";
-            // 
-            // LOM1
-            // 
-            this.LOM1.Frozen = true;
-            this.LOM1.HeaderText = "8";
-            this.LOM1.Name = "LOM1";
-            // 
-            // NEDO1
-            // 
-            this.NEDO1.Frozen = true;
-            this.NEDO1.HeaderText = "9";
-            this.NEDO1.Name = "NEDO1";
-            // 
-            // POL2
-            // 
-            this.POL2.Frozen = true;
-            this.POL2.HeaderText = "10";
-            this.POL2.Name = "POL2";
-            // 
-            // VOZVR2
-            // 
-            this.VOZVR2.Frozen = true;
-            this.VOZVR2.HeaderText = "11";
-            this.VOZVR2.Name = "VOZVR2";
-            // 
-            // LOM2
-            // 
-            this.LOM2.Frozen = true;
-            this.LOM2.HeaderText = "12";
-            this.LOM2.Name = "LOM2";
-            // 
-            // NEDO2
-            // 
-            this.NEDO2.Frozen = true;
-            this.NEDO2.HeaderText = "13";
-            this.NEDO2.Name = "NEDO2";
-            // 
-            // POL3
-            // 
-            this.POL3.Frozen = true;
-            this.POL3.HeaderText = "14";
-            this.POL3.Name = "POL3";
-            // 
-            // VOZVR3
-            // 
-            this.VOZVR3.Frozen = true;
-            this.VOZVR3.HeaderText = "15";
-            this.VOZVR3.Name = "VOZVR3";
-            // 
-            // LOM3
-            // 
-            this.LOM3.Frozen = true;
-            this.LOM3.HeaderText = "16";
-            this.LOM3.Name = "LOM3";
-            // 
-            // NEDO3
-            // 
-            this.NEDO3.Frozen = true;
-            this.NEDO3.HeaderText = "17";
-            this.NEDO3.Name = "NEDO3";
-            // 
-            // POL4
-            // 
-            this.POL4.Frozen = true;
-            this.POL4.HeaderText = "18";
-            this.POL4.Name = "POL4";
-            // 
-            // VOZVR4
-            // 
-            this.VOZVR4.Frozen = true;
-            this.VOZVR4.HeaderText = "19";
-            this.VOZVR4.Name = "VOZVR4";
-            // 
-            // LOM4
-            // 
-            this.LOM4.Frozen = true;
-            this.LOM4.HeaderText = "20";
-            this.LOM4.Name = "LOM4";
-            // 
-            // NEDO4
-            // 
-            this.NEDO4.Frozen = true;
-            this.NEDO4.HeaderText = "21";
-            this.NEDO4.Name = "NEDO4";
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePicker.CalendarFont = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker.CalendarForeColor = System.Drawing.Color.DodgerBlue;
+            this.dateTimePicker.CalendarTitleForeColor = System.Drawing.Color.DodgerBlue;
+            this.dateTimePicker.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker.Location = new System.Drawing.Point(968, 261);
+            this.dateTimePicker.MinDate = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 29);
+            this.dateTimePicker.TabIndex = 51;
+            this.dateTimePicker.Value = new System.DateTime(2025, 3, 18, 0, 0, 0, 0);
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(534, 797);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 14);
+            this.label8.TabIndex = 54;
+            this.label8.Text = "(подлпись)";
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Location = new System.Drawing.Point(484, 796);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(156, 1);
+            this.panel9.TabIndex = 53;
+            // 
+            // textBox_podpis
+            // 
+            this.textBox_podpis.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox_podpis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_podpis.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox_podpis.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_podpis.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBox_podpis.Location = new System.Drawing.Point(484, 774);
+            this.textBox_podpis.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox_podpis.MaxLength = 50;
+            this.textBox_podpis.Name = "textBox_podpis";
+            this.textBox_podpis.Size = new System.Drawing.Size(156, 22);
+            this.textBox_podpis.TabIndex = 52;
+            this.textBox_podpis.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // dateTimePicker_S
+            // 
+            this.dateTimePicker_S.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateTimePicker_S.CalendarFont = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker_S.CalendarForeColor = System.Drawing.Color.DodgerBlue;
+            this.dateTimePicker_S.CalendarTitleForeColor = System.Drawing.Color.DodgerBlue;
+            this.dateTimePicker_S.CustomFormat = "";
+            this.dateTimePicker_S.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker_S.Location = new System.Drawing.Point(425, 162);
+            this.dateTimePicker_S.MinDate = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker_S.Name = "dateTimePicker_S";
+            this.dateTimePicker_S.Size = new System.Drawing.Size(200, 29);
+            this.dateTimePicker_S.TabIndex = 55;
+            this.dateTimePicker_S.Value = new System.DateTime(2025, 3, 18, 0, 0, 0, 0);
+            // 
+            // dateTimePicker_PO
+            // 
+            this.dateTimePicker_PO.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateTimePicker_PO.CalendarFont = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker_PO.CalendarForeColor = System.Drawing.Color.DodgerBlue;
+            this.dateTimePicker_PO.CalendarTitleForeColor = System.Drawing.Color.DodgerBlue;
+            this.dateTimePicker_PO.CustomFormat = "";
+            this.dateTimePicker_PO.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker_PO.Location = new System.Drawing.Point(662, 162);
+            this.dateTimePicker_PO.MinDate = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker_PO.Name = "dateTimePicker_PO";
+            this.dateTimePicker_PO.Size = new System.Drawing.Size(200, 29);
+            this.dateTimePicker_PO.TabIndex = 56;
+            this.dateTimePicker_PO.Value = new System.DateTime(2025, 4, 18, 0, 0, 0, 0);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 861);
+            this.Controls.Add(this.dateTimePicker_PO);
+            this.Controls.Add(this.dateTimePicker_S);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.textBox_podpis);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button_form);
             this.Controls.Add(this.label57);
@@ -1971,15 +1853,6 @@
             this.Controls.Add(this.label55);
             this.Controls.Add(this.tableLayoutPanel_Head);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.textBox_GOD2);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.textBox_MONTH);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.textBox_DAY);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.label_FIO);
             this.Controls.Add(this.panel7);
@@ -1988,14 +1861,7 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.textBox_dolzhnost);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.textBox_data_GODA);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.textBox_data_PO);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.textBox_data_S);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -2011,7 +1877,7 @@
             this.Controls.Add(this.textBox_OKPO);
             this.Controls.Add(this.textBox_kod);
             this.Name = "Main";
-            this.Text = " ";
+            this.Text = " Унифицированная форма № ОП-19";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel_Head.ResumeLayout(false);
             this.tableLayoutPanel_Head.PerformLayout();
@@ -2038,14 +1904,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox_data_S;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox_data_PO;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox_data_GODA;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label_dolzhnost;
         private System.Windows.Forms.Panel panel6;
@@ -2054,15 +1913,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox textBox_FIO;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox_DAY;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox_MONTH;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox textBox_GOD2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Head;
         private System.Windows.Forms.Label label11;
@@ -2161,5 +2011,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn VOZVR4;
         private System.Windows.Forms.DataGridViewTextBoxColumn LOM4;
         private System.Windows.Forms.DataGridViewTextBoxColumn NEDO4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.TextBox textBox_podpis;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_S;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_PO;
     }
 }
