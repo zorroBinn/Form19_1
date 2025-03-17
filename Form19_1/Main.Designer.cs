@@ -1365,7 +1365,7 @@
             this.label_NEDO4.AutoSize = true;
             this.label_NEDO4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_NEDO4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_NEDO4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_NEDO4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_NEDO4.Location = new System.Drawing.Point(1093, 0);
             this.label_NEDO4.Margin = new System.Windows.Forms.Padding(0);
             this.label_NEDO4.Name = "label_NEDO4";
@@ -1378,7 +1378,7 @@
             this.label_LOM4.AutoSize = true;
             this.label_LOM4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_LOM4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_LOM4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_LOM4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_LOM4.Location = new System.Drawing.Point(1048, 0);
             this.label_LOM4.Margin = new System.Windows.Forms.Padding(0);
             this.label_LOM4.Name = "label_LOM4";
@@ -1391,7 +1391,7 @@
             this.label_VOZVR4.AutoSize = true;
             this.label_VOZVR4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_VOZVR4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_VOZVR4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_VOZVR4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_VOZVR4.Location = new System.Drawing.Point(991, 0);
             this.label_VOZVR4.Margin = new System.Windows.Forms.Padding(0);
             this.label_VOZVR4.Name = "label_VOZVR4";
@@ -1404,7 +1404,7 @@
             this.label_POL4.AutoSize = true;
             this.label_POL4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_POL4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_POL4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_POL4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_POL4.Location = new System.Drawing.Point(946, 0);
             this.label_POL4.Margin = new System.Windows.Forms.Padding(0);
             this.label_POL4.Name = "label_POL4";
@@ -1417,7 +1417,7 @@
             this.label_NEDO3.AutoSize = true;
             this.label_NEDO3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_NEDO3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_NEDO3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_NEDO3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_NEDO3.Location = new System.Drawing.Point(901, 0);
             this.label_NEDO3.Margin = new System.Windows.Forms.Padding(0);
             this.label_NEDO3.Name = "label_NEDO3";
@@ -1430,7 +1430,7 @@
             this.label_LOM3.AutoSize = true;
             this.label_LOM3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_LOM3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_LOM3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_LOM3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_LOM3.Location = new System.Drawing.Point(856, 0);
             this.label_LOM3.Margin = new System.Windows.Forms.Padding(0);
             this.label_LOM3.Name = "label_LOM3";
@@ -1443,7 +1443,7 @@
             this.label_VOZVR3.AutoSize = true;
             this.label_VOZVR3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_VOZVR3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_VOZVR3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_VOZVR3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_VOZVR3.Location = new System.Drawing.Point(799, 0);
             this.label_VOZVR3.Margin = new System.Windows.Forms.Padding(0);
             this.label_VOZVR3.Name = "label_VOZVR3";
@@ -1456,7 +1456,7 @@
             this.label_POL3.AutoSize = true;
             this.label_POL3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_POL3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_POL3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_POL3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_POL3.Location = new System.Drawing.Point(754, 0);
             this.label_POL3.Margin = new System.Windows.Forms.Padding(0);
             this.label_POL3.Name = "label_POL3";
@@ -1469,7 +1469,7 @@
             this.label_NEDO2.AutoSize = true;
             this.label_NEDO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_NEDO2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_NEDO2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_NEDO2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_NEDO2.Location = new System.Drawing.Point(709, 0);
             this.label_NEDO2.Margin = new System.Windows.Forms.Padding(0);
             this.label_NEDO2.Name = "label_NEDO2";
@@ -1482,7 +1482,7 @@
             this.label_LOM2.AutoSize = true;
             this.label_LOM2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_LOM2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_LOM2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_LOM2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_LOM2.Location = new System.Drawing.Point(664, 0);
             this.label_LOM2.Margin = new System.Windows.Forms.Padding(0);
             this.label_LOM2.Name = "label_LOM2";
@@ -1495,7 +1495,7 @@
             this.label_VOZVR2.AutoSize = true;
             this.label_VOZVR2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_VOZVR2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_VOZVR2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_VOZVR2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_VOZVR2.Location = new System.Drawing.Point(607, 0);
             this.label_VOZVR2.Margin = new System.Windows.Forms.Padding(0);
             this.label_VOZVR2.Name = "label_VOZVR2";
@@ -1508,7 +1508,7 @@
             this.label_POL2.AutoSize = true;
             this.label_POL2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_POL2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_POL2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_POL2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_POL2.Location = new System.Drawing.Point(562, 0);
             this.label_POL2.Margin = new System.Windows.Forms.Padding(0);
             this.label_POL2.Name = "label_POL2";
@@ -1521,7 +1521,7 @@
             this.label_NEDO1.AutoSize = true;
             this.label_NEDO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_NEDO1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_NEDO1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_NEDO1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_NEDO1.Location = new System.Drawing.Point(517, 0);
             this.label_NEDO1.Margin = new System.Windows.Forms.Padding(0);
             this.label_NEDO1.Name = "label_NEDO1";
@@ -1534,7 +1534,7 @@
             this.label_LOM1.AutoSize = true;
             this.label_LOM1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_LOM1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_LOM1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_LOM1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_LOM1.Location = new System.Drawing.Point(472, 0);
             this.label_LOM1.Margin = new System.Windows.Forms.Padding(0);
             this.label_LOM1.Name = "label_LOM1";
@@ -1547,7 +1547,7 @@
             this.label_VOZVR1.AutoSize = true;
             this.label_VOZVR1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_VOZVR1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_VOZVR1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_VOZVR1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_VOZVR1.Location = new System.Drawing.Point(415, 0);
             this.label_VOZVR1.Margin = new System.Windows.Forms.Padding(0);
             this.label_VOZVR1.Name = "label_VOZVR1";
@@ -1560,7 +1560,7 @@
             this.label_POL1.AutoSize = true;
             this.label_POL1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_POL1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_POL1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_POL1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_POL1.Location = new System.Drawing.Point(370, 0);
             this.label_POL1.Margin = new System.Windows.Forms.Padding(0);
             this.label_POL1.Name = "label_POL1";
@@ -1574,7 +1574,7 @@
             this.label58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel1.SetColumnSpan(this.label58, 5);
             this.label58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label58.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label58.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label58.Location = new System.Drawing.Point(0, 0);
             this.label58.Margin = new System.Windows.Forms.Padding(0);
             this.label58.Name = "label58";
