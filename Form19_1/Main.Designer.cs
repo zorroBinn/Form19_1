@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox_kod = new System.Windows.Forms.TextBox();
             this.textBox_OKPO = new System.Windows.Forms.TextBox();
             this.textBox_OKDP = new System.Windows.Forms.TextBox();
@@ -52,28 +53,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBox_FIO = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.nomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EI_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kodOKEI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VOZVR1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LOM1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NEDO1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POL2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VOZVR2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LOM2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NEDO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POL3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VOZVR3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LOM3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NEDO3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POL4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VOZVR4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LOM4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NEDO4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel_Head = new System.Windows.Forms.TableLayoutPanel();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -156,9 +135,31 @@
             this.textBox_podpis = new System.Windows.Forms.TextBox();
             this.dateTimePicker_S = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_PO = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel_Head.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox_kod
@@ -431,175 +432,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1190, 1);
             this.panel8.TabIndex = 29;
-            // 
-            // dataGridView1
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nomer,
-            this.name,
-            this.kod,
-            this.EI_name,
-            this.kodOKEI,
-            this.POL1,
-            this.VOZVR1,
-            this.LOM1,
-            this.NEDO1,
-            this.POL2,
-            this.VOZVR2,
-            this.LOM2,
-            this.NEDO2,
-            this.POL3,
-            this.VOZVR3,
-            this.LOM3,
-            this.NEDO3,
-            this.POL4,
-            this.VOZVR4,
-            this.LOM4,
-            this.NEDO4});
-            this.dataGridView1.Location = new System.Drawing.Point(28, 416);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dataGridView1.Size = new System.Drawing.Size(1140, 279);
-            this.dataGridView1.TabIndex = 39;
-            // 
-            // nomer
-            // 
-            this.nomer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nomer.Frozen = true;
-            this.nomer.HeaderText = "1";
-            this.nomer.Name = "nomer";
-            this.nomer.ReadOnly = true;
-            this.nomer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.nomer.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.nomer.Width = 21;
-            // 
-            // name
-            // 
-            this.name.Frozen = true;
-            this.name.HeaderText = "2";
-            this.name.Name = "name";
-            // 
-            // kod
-            // 
-            this.kod.Frozen = true;
-            this.kod.HeaderText = "3";
-            this.kod.Name = "kod";
-            // 
-            // EI_name
-            // 
-            this.EI_name.Frozen = true;
-            this.EI_name.HeaderText = "4";
-            this.EI_name.Name = "EI_name";
-            // 
-            // kodOKEI
-            // 
-            this.kodOKEI.Frozen = true;
-            this.kodOKEI.HeaderText = "5";
-            this.kodOKEI.Name = "kodOKEI";
-            // 
-            // POL1
-            // 
-            this.POL1.Frozen = true;
-            this.POL1.HeaderText = "6";
-            this.POL1.Name = "POL1";
-            // 
-            // VOZVR1
-            // 
-            this.VOZVR1.Frozen = true;
-            this.VOZVR1.HeaderText = "7";
-            this.VOZVR1.Name = "VOZVR1";
-            // 
-            // LOM1
-            // 
-            this.LOM1.Frozen = true;
-            this.LOM1.HeaderText = "8";
-            this.LOM1.Name = "LOM1";
-            // 
-            // NEDO1
-            // 
-            this.NEDO1.Frozen = true;
-            this.NEDO1.HeaderText = "9";
-            this.NEDO1.Name = "NEDO1";
-            // 
-            // POL2
-            // 
-            this.POL2.Frozen = true;
-            this.POL2.HeaderText = "10";
-            this.POL2.Name = "POL2";
-            // 
-            // VOZVR2
-            // 
-            this.VOZVR2.Frozen = true;
-            this.VOZVR2.HeaderText = "11";
-            this.VOZVR2.Name = "VOZVR2";
-            // 
-            // LOM2
-            // 
-            this.LOM2.Frozen = true;
-            this.LOM2.HeaderText = "12";
-            this.LOM2.Name = "LOM2";
-            // 
-            // NEDO2
-            // 
-            this.NEDO2.Frozen = true;
-            this.NEDO2.HeaderText = "13";
-            this.NEDO2.Name = "NEDO2";
-            // 
-            // POL3
-            // 
-            this.POL3.Frozen = true;
-            this.POL3.HeaderText = "14";
-            this.POL3.Name = "POL3";
-            // 
-            // VOZVR3
-            // 
-            this.VOZVR3.Frozen = true;
-            this.VOZVR3.HeaderText = "15";
-            this.VOZVR3.Name = "VOZVR3";
-            // 
-            // LOM3
-            // 
-            this.LOM3.Frozen = true;
-            this.LOM3.HeaderText = "16";
-            this.LOM3.Name = "LOM3";
-            // 
-            // NEDO3
-            // 
-            this.NEDO3.Frozen = true;
-            this.NEDO3.HeaderText = "17";
-            this.NEDO3.Name = "NEDO3";
-            // 
-            // POL4
-            // 
-            this.POL4.Frozen = true;
-            this.POL4.HeaderText = "18";
-            this.POL4.Name = "POL4";
-            // 
-            // VOZVR4
-            // 
-            this.VOZVR4.Frozen = true;
-            this.VOZVR4.HeaderText = "19";
-            this.VOZVR4.Name = "VOZVR4";
-            // 
-            // LOM4
-            // 
-            this.LOM4.Frozen = true;
-            this.LOM4.HeaderText = "20";
-            this.LOM4.Name = "LOM4";
-            // 
-            // NEDO4
-            // 
-            this.NEDO4.Frozen = true;
-            this.NEDO4.HeaderText = "21";
-            this.NEDO4.Name = "NEDO4";
             // 
             // tableLayoutPanel_Head
             // 
@@ -1831,11 +1663,220 @@
             this.dateTimePicker_PO.TabIndex = 56;
             this.dateTimePicker_PO.Value = new System.DateTime(2025, 4, 18, 0, 0, 0, 0);
             // 
+            // dataGridView
+            // 
+            this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.ColumnHeadersVisible = false;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12,
+            this.Column13,
+            this.Column14,
+            this.Column15,
+            this.Column16,
+            this.Column17,
+            this.Column18,
+            this.Column19,
+            this.Column20,
+            this.Column21});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView.Location = new System.Drawing.Point(28, 416);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersVisible = false;
+            this.dataGridView.Size = new System.Drawing.Size(1157, 279);
+            this.dataGridView.TabIndex = 57;
+            this.dataGridView.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView_RowsAdded);
+            this.dataGridView.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dataGridView_RowsRemoved);
+            this.dataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView_KeyDown);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "1";
+            this.Column1.MinimumWidth = 56;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column1.Width = 56;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "2";
+            this.Column2.MinimumWidth = 147;
+            this.Column2.Name = "Column2";
+            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column2.Width = 147;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "3";
+            this.Column3.MinimumWidth = 57;
+            this.Column3.Name = "Column3";
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.Width = 57;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "4";
+            this.Column4.MinimumWidth = 57;
+            this.Column4.Name = "Column4";
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column4.Width = 57;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "5";
+            this.Column5.MinimumWidth = 51;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 51;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "6";
+            this.Column6.MinimumWidth = 45;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 45;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "7";
+            this.Column7.MinimumWidth = 57;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 57;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "8";
+            this.Column8.MinimumWidth = 45;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 45;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "9";
+            this.Column9.MinimumWidth = 45;
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 45;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "10";
+            this.Column10.MinimumWidth = 45;
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 45;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "11";
+            this.Column11.MinimumWidth = 57;
+            this.Column11.Name = "Column11";
+            this.Column11.Width = 57;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "12";
+            this.Column12.MinimumWidth = 45;
+            this.Column12.Name = "Column12";
+            this.Column12.Width = 45;
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "13";
+            this.Column13.MinimumWidth = 45;
+            this.Column13.Name = "Column13";
+            this.Column13.Width = 45;
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = "14";
+            this.Column14.MinimumWidth = 45;
+            this.Column14.Name = "Column14";
+            this.Column14.Width = 45;
+            // 
+            // Column15
+            // 
+            this.Column15.HeaderText = "15";
+            this.Column15.MinimumWidth = 57;
+            this.Column15.Name = "Column15";
+            this.Column15.Width = 57;
+            // 
+            // Column16
+            // 
+            this.Column16.HeaderText = "16";
+            this.Column16.MinimumWidth = 45;
+            this.Column16.Name = "Column16";
+            this.Column16.Width = 45;
+            // 
+            // Column17
+            // 
+            this.Column17.HeaderText = "17";
+            this.Column17.MinimumWidth = 45;
+            this.Column17.Name = "Column17";
+            this.Column17.Width = 45;
+            // 
+            // Column18
+            // 
+            this.Column18.HeaderText = "18";
+            this.Column18.MinimumWidth = 45;
+            this.Column18.Name = "Column18";
+            this.Column18.Width = 45;
+            // 
+            // Column19
+            // 
+            this.Column19.HeaderText = "19";
+            this.Column19.MinimumWidth = 57;
+            this.Column19.Name = "Column19";
+            this.Column19.Width = 57;
+            // 
+            // Column20
+            // 
+            this.Column20.HeaderText = "20";
+            this.Column20.MinimumWidth = 45;
+            this.Column20.Name = "Column20";
+            this.Column20.Width = 45;
+            // 
+            // Column21
+            // 
+            this.Column21.HeaderText = "21";
+            this.Column21.MinimumWidth = 46;
+            this.Column21.Name = "Column21";
+            this.Column21.Width = 46;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 861);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.dateTimePicker_PO);
             this.Controls.Add(this.dateTimePicker_S);
             this.Controls.Add(this.label8);
@@ -1852,7 +1893,6 @@
             this.Controls.Add(this.textBox_dolzhnost2);
             this.Controls.Add(this.label55);
             this.Controls.Add(this.tableLayoutPanel_Head);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.label_FIO);
             this.Controls.Add(this.panel7);
@@ -1878,11 +1918,12 @@
             this.Controls.Add(this.textBox_kod);
             this.Name = "Main";
             this.Text = " Унифицированная форма № ОП-19";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Main_Load);
             this.tableLayoutPanel_Head.ResumeLayout(false);
             this.tableLayoutPanel_Head.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1913,7 +1954,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox textBox_FIO;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Head;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label_1;
@@ -1990,32 +2030,33 @@
         private System.Windows.Forms.Label label_LOM1;
         private System.Windows.Forms.Label label_VOZVR1;
         private System.Windows.Forms.Label label_POL1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kod;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EI_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kodOKEI;
-        private System.Windows.Forms.DataGridViewTextBoxColumn POL1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VOZVR1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LOM1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NEDO1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn POL2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VOZVR2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LOM2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NEDO2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn POL3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VOZVR3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LOM3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NEDO3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn POL4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VOZVR4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LOM4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NEDO4;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox textBox_podpis;
         private System.Windows.Forms.DateTimePicker dateTimePicker_S;
         private System.Windows.Forms.DateTimePicker dateTimePicker_PO;
+        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
     }
 }
