@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox_kod = new System.Windows.Forms.TextBox();
             this.textBox_OKPO = new System.Windows.Forms.TextBox();
             this.textBox_OKDP = new System.Windows.Forms.TextBox();
@@ -1223,7 +1223,7 @@
             this.label55.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label55.Location = new System.Drawing.Point(12, 779);
+            this.label55.Location = new System.Drawing.Point(12, 764);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(225, 17);
             this.label55.TabIndex = 41;
@@ -1234,7 +1234,7 @@
             this.label56.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label56.Location = new System.Drawing.Point(320, 798);
+            this.label56.Location = new System.Drawing.Point(320, 785);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(65, 14);
             this.label56.TabIndex = 44;
@@ -1244,7 +1244,7 @@
             // 
             this.panel12.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Location = new System.Drawing.Point(240, 796);
+            this.panel12.Location = new System.Drawing.Point(240, 783);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(232, 1);
@@ -1257,7 +1257,7 @@
             this.textBox_dolzhnost2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox_dolzhnost2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_dolzhnost2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_dolzhnost2.Location = new System.Drawing.Point(240, 774);
+            this.textBox_dolzhnost2.Location = new System.Drawing.Point(240, 761);
             this.textBox_dolzhnost2.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_dolzhnost2.MaxLength = 100;
             this.textBox_dolzhnost2.Name = "textBox_dolzhnost2";
@@ -1270,7 +1270,7 @@
             this.label57.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label57.Location = new System.Drawing.Point(733, 798);
+            this.label57.Location = new System.Drawing.Point(730, 785);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(122, 14);
             this.label57.TabIndex = 47;
@@ -1280,7 +1280,7 @@
             // 
             this.panel13.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Location = new System.Drawing.Point(655, 796);
+            this.panel13.Location = new System.Drawing.Point(652, 783);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(292, 1);
@@ -1293,7 +1293,7 @@
             this.textBox_rashifr.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox_rashifr.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_rashifr.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_rashifr.Location = new System.Drawing.Point(655, 774);
+            this.textBox_rashifr.Location = new System.Drawing.Point(652, 761);
             this.textBox_rashifr.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_rashifr.MaxLength = 150;
             this.textBox_rashifr.Name = "textBox_rashifr";
@@ -1303,13 +1303,13 @@
             // 
             // button_form
             // 
-            this.button_form.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_form.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_form.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_form.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_form.Location = new System.Drawing.Point(962, 779);
+            this.button_form.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_form.Location = new System.Drawing.Point(992, 759);
             this.button_form.Name = "button_form";
-            this.button_form.Size = new System.Drawing.Size(210, 70);
+            this.button_form.Size = new System.Drawing.Size(180, 40);
             this.button_form.TabIndex = 48;
             this.button_form.Text = "Cформировать";
             this.button_form.UseVisualStyleBackColor = false;
@@ -1606,7 +1606,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(534, 797);
+            this.label8.Location = new System.Drawing.Point(529, 784);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 14);
             this.label8.TabIndex = 54;
@@ -1616,7 +1616,7 @@
             // 
             this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Location = new System.Drawing.Point(484, 796);
+            this.panel9.Location = new System.Drawing.Point(479, 783);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(156, 1);
@@ -1629,7 +1629,7 @@
             this.textBox_podpis.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox_podpis.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_podpis.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_podpis.Location = new System.Drawing.Point(484, 774);
+            this.textBox_podpis.Location = new System.Drawing.Point(479, 761);
             this.textBox_podpis.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_podpis.MaxLength = 50;
             this.textBox_podpis.Name = "textBox_podpis";
@@ -1673,14 +1673,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.ColumnHeadersVisible = false;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1705,14 +1705,14 @@
             this.Column19,
             this.Column20,
             this.Column21});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView.Location = new System.Drawing.Point(28, 416);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridView.Name = "dataGridView";
@@ -1879,7 +1879,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 861);
+            this.ClientSize = new System.Drawing.Size(1184, 811);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.dateTimePicker_PO);
             this.Controls.Add(this.dateTimePicker_S);
