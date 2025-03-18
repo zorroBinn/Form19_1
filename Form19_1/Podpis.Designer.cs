@@ -227,6 +227,7 @@
             this.Controls.Add(this.label55);
             this.Controls.Add(this.button_utverd);
             this.Name = "Podpis";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Утверждение подписей";
             this.ResumeLayout(false);
             this.PerformLayout();
