@@ -52,13 +52,27 @@ namespace Form19_1
         {
             if (e.KeyCode == Keys.Delete && dataGridView.CurrentCell != null)
             {
-                // Проверяем, выбрана ли ячейка в первом столбце
                 if (dataGridView.CurrentCell.ColumnIndex == 0)
                 {
                     DeleteSelectedRow();
                 }
             }
 
+        }
+
+        private void linkLabel_New_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            using (Podpis child = new Podpis(this))
+            {
+                this.Enabled = false;
+                child.ShowDialog();
+                this.Enabled = true;
+            }
+        }
+
+        public void UpdateButtonColor()
+        {
+            linkLabel_New.LinkColor = Color.Green;
         }
     }
 }
