@@ -77,6 +77,7 @@
             this.textBox_fio2.Size = new System.Drawing.Size(506, 22);
             this.textBox_fio2.TabIndex = 95;
             this.textBox_fio2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_fio2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_fio2_KeyPress);
             // 
             // comboBox_dolg2
             // 
@@ -174,6 +175,7 @@
             this.textBox_fio1.Size = new System.Drawing.Size(506, 22);
             this.textBox_fio1.TabIndex = 102;
             this.textBox_fio1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_fio1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_fio1_KeyPress);
             // 
             // comboBox_dolg1
             // 
@@ -226,6 +228,8 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label55);
             this.Controls.Add(this.button_utverd);
+            this.MaximumSize = new System.Drawing.Size(540, 400);
+            this.MinimumSize = new System.Drawing.Size(540, 400);
             this.Name = "Podpis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Утверждение подписей";
