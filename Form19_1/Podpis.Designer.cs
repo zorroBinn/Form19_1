@@ -81,6 +81,8 @@
             // 
             // comboBox_dolg2
             // 
+            this.comboBox_dolg2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_dolg2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_dolg2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox_dolg2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox_dolg2.ForeColor = System.Drawing.Color.DodgerBlue;
@@ -179,6 +181,8 @@
             // 
             // comboBox_dolg1
             // 
+            this.comboBox_dolg1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_dolg1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_dolg1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox_dolg1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox_dolg1.ForeColor = System.Drawing.Color.DodgerBlue;

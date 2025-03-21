@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox_kod = new System.Windows.Forms.TextBox();
             this.textBox_OKPO = new System.Windows.Forms.TextBox();
             this.textBox_OKDP = new System.Windows.Forms.TextBox();
@@ -79,14 +79,6 @@
             this.dateTimePicker_S = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_PO = new System.Windows.Forms.DateTimePicker();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.linkLabel_New = new System.Windows.Forms.LinkLabel();
-            this.comboBox_organiz = new System.Windows.Forms.ComboBox();
-            this.comboBox_podrazdel = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.groupBox_button = new System.Windows.Forms.GroupBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -108,6 +100,14 @@
             this.Column9_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9_3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9_4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.linkLabel_New = new System.Windows.Forms.LinkLabel();
+            this.comboBox_organiz = new System.Windows.Forms.ComboBox();
+            this.comboBox_podrazdel = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox_button = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel_Head.SuspendLayout();
             this.tableLayoutPanel_svodka.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -850,14 +850,14 @@
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.ColumnHeadersVisible = false;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -882,14 +882,14 @@
             this.Column9_2,
             this.Column9_3,
             this.Column9_4});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView.Location = new System.Drawing.Point(28, 382);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridView.Name = "dataGridView";
@@ -901,126 +901,6 @@
             this.dataGridView.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView_RowsAdded);
             this.dataGridView.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dataGridView_RowsRemoved);
             this.dataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView_KeyDown);
-            // 
-            // linkLabel_New
-            // 
-            this.linkLabel_New.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.linkLabel_New.AutoSize = true;
-            this.linkLabel_New.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel_New.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel_New.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabel_New.Location = new System.Drawing.Point(24, 727);
-            this.linkLabel_New.Name = "linkLabel_New";
-            this.linkLabel_New.Size = new System.Drawing.Size(198, 21);
-            this.linkLabel_New.TabIndex = 73;
-            this.linkLabel_New.TabStop = true;
-            this.linkLabel_New.Text = "Утверждение подписей";
-            this.linkLabel_New.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_New_LinkClicked);
-            // 
-            // comboBox_organiz
-            // 
-            this.comboBox_organiz.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox_organiz.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox_organiz.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_organiz.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.comboBox_organiz.FormattingEnabled = true;
-            this.comboBox_organiz.Location = new System.Drawing.Point(11, 6);
-            this.comboBox_organiz.MaxLength = 100;
-            this.comboBox_organiz.Name = "comboBox_organiz";
-            this.comboBox_organiz.Size = new System.Drawing.Size(770, 29);
-            this.comboBox_organiz.TabIndex = 102;
-            this.comboBox_organiz.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_organiz_KeyPress);
-            // 
-            // comboBox_podrazdel
-            // 
-            this.comboBox_podrazdel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox_podrazdel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox_podrazdel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_podrazdel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.comboBox_podrazdel.FormattingEnabled = true;
-            this.comboBox_podrazdel.Location = new System.Drawing.Point(10, 52);
-            this.comboBox_podrazdel.MaxLength = 100;
-            this.comboBox_podrazdel.Name = "comboBox_podrazdel";
-            this.comboBox_podrazdel.Size = new System.Drawing.Size(771, 29);
-            this.comboBox_podrazdel.TabIndex = 103;
-            this.comboBox_podrazdel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_podrazdel_KeyPress);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(6, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 30);
-            this.button1.TabIndex = 104;
-            this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.button2.Location = new System.Drawing.Point(62, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 30);
-            this.button2.TabIndex = 105;
-            this.button2.Text = "2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.button3.Location = new System.Drawing.Point(118, 8);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 30);
-            this.button3.TabIndex = 106;
-            this.button3.Text = "3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.button4.Location = new System.Drawing.Point(174, 8);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 30);
-            this.button4.TabIndex = 107;
-            this.button4.Text = "4";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // groupBox_button
-            // 
-            this.groupBox_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox_button.Controls.Add(this.button4);
-            this.groupBox_button.Controls.Add(this.button3);
-            this.groupBox_button.Controls.Add(this.button2);
-            this.groupBox_button.Controls.Add(this.button1);
-            this.groupBox_button.Location = new System.Drawing.Point(785, 218);
-            this.groupBox_button.Margin = new System.Windows.Forms.Padding(0);
-            this.groupBox_button.Name = "groupBox_button";
-            this.groupBox_button.Size = new System.Drawing.Size(230, 44);
-            this.groupBox_button.TabIndex = 108;
-            this.groupBox_button.TabStop = false;
             // 
             // Column1
             // 
@@ -1166,6 +1046,131 @@
             this.Column9_4.MinimumWidth = 114;
             this.Column9_4.Name = "Column9_4";
             this.Column9_4.Visible = false;
+            // 
+            // linkLabel_New
+            // 
+            this.linkLabel_New.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.linkLabel_New.AutoSize = true;
+            this.linkLabel_New.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel_New.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel_New.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.linkLabel_New.Location = new System.Drawing.Point(24, 727);
+            this.linkLabel_New.Name = "linkLabel_New";
+            this.linkLabel_New.Size = new System.Drawing.Size(198, 21);
+            this.linkLabel_New.TabIndex = 73;
+            this.linkLabel_New.TabStop = true;
+            this.linkLabel_New.Text = "Утверждение подписей";
+            this.linkLabel_New.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_New_LinkClicked);
+            // 
+            // comboBox_organiz
+            // 
+            this.comboBox_organiz.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_organiz.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_organiz.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox_organiz.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox_organiz.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_organiz.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.comboBox_organiz.FormattingEnabled = true;
+            this.comboBox_organiz.Location = new System.Drawing.Point(11, 6);
+            this.comboBox_organiz.MaxLength = 100;
+            this.comboBox_organiz.Name = "comboBox_organiz";
+            this.comboBox_organiz.Size = new System.Drawing.Size(770, 29);
+            this.comboBox_organiz.TabIndex = 102;
+            this.comboBox_organiz.SelectedIndexChanged += new System.EventHandler(this.comboBox_organiz_SelectedIndexChanged);
+            this.comboBox_organiz.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_organiz_KeyPress);
+            // 
+            // comboBox_podrazdel
+            // 
+            this.comboBox_podrazdel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_podrazdel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_podrazdel.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox_podrazdel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox_podrazdel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_podrazdel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.comboBox_podrazdel.FormattingEnabled = true;
+            this.comboBox_podrazdel.Location = new System.Drawing.Point(10, 52);
+            this.comboBox_podrazdel.MaxLength = 100;
+            this.comboBox_podrazdel.Name = "comboBox_podrazdel";
+            this.comboBox_podrazdel.Size = new System.Drawing.Size(771, 29);
+            this.comboBox_podrazdel.TabIndex = 103;
+            this.comboBox_podrazdel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_podrazdel_KeyPress);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(6, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 30);
+            this.button1.TabIndex = 104;
+            this.button1.Text = "1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.button2.Location = new System.Drawing.Point(62, 8);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(50, 30);
+            this.button2.TabIndex = 105;
+            this.button2.Text = "2";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.button3.Location = new System.Drawing.Point(118, 8);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(50, 30);
+            this.button3.TabIndex = 106;
+            this.button3.Text = "3";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.button4.Location = new System.Drawing.Point(174, 8);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(50, 30);
+            this.button4.TabIndex = 107;
+            this.button4.Text = "4";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // groupBox_button
+            // 
+            this.groupBox_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox_button.Controls.Add(this.button4);
+            this.groupBox_button.Controls.Add(this.button3);
+            this.groupBox_button.Controls.Add(this.button2);
+            this.groupBox_button.Controls.Add(this.button1);
+            this.groupBox_button.Location = new System.Drawing.Point(785, 218);
+            this.groupBox_button.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBox_button.Name = "groupBox_button";
+            this.groupBox_button.Size = new System.Drawing.Size(230, 44);
+            this.groupBox_button.TabIndex = 108;
+            this.groupBox_button.TabStop = false;
             // 
             // Main
             // 

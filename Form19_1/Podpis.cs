@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,39 @@ namespace Form19_1
     public partial class Podpis : Form
     {
         private Main parentForm;
+        private string dolzhnostFile = "dolzhnostBase.csv";
 
         public Podpis(Main parent)
         {
             InitializeComponent();
             this.parentForm = parent;
+            LoadDolzhnosti();
+        }
+
+        private void LoadDolzhnosti()
+        {
+            if (File.Exists(dolzhnostFile))
+            {
+                var dolzhnosti = File.ReadAllLines(dolzhnostFile).Distinct().ToList();
+                comboBox_dolg1.Items.Clear();
+                comboBox_dolg2.Items.Clear();
+                comboBox_dolg1.Items.AddRange(dolzhnosti.ToArray());
+                comboBox_dolg2.Items.AddRange(dolzhnosti.ToArray());
+            }
+        }
+
+        private void SaveDolzhnost(string dolzhnost)
+        {
+            if (!string.IsNullOrWhiteSpace(dolzhnost))
+            {
+                var dolzhnosti = File.Exists(dolzhnostFile) ? File.ReadAllLines(dolzhnostFile).ToList() : new List<string>();
+
+                if (!dolzhnosti.Contains(dolzhnost))
+                {
+                    dolzhnosti.Add(dolzhnost);
+                    File.WriteAllLines(dolzhnostFile, dolzhnosti);
+                }
+            }
         }
 
         private bool HighlightIfEmpty(Control control)
@@ -51,6 +80,8 @@ namespace Form19_1
 
             if (allFilled)
             {
+                SaveDolzhnost(comboBox_dolg1.Text);
+                SaveDolzhnost(comboBox_dolg2.Text);
                 parentForm.UpdateButtonColor();
                 this.Close();
             }
