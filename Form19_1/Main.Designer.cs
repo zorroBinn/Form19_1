@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox_kod = new System.Windows.Forms.TextBox();
             this.textBox_OKPO = new System.Windows.Forms.TextBox();
             this.textBox_OKDP = new System.Windows.Forms.TextBox();
@@ -66,7 +66,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label_1 = new System.Windows.Forms.Label();
             this.label_2 = new System.Windows.Forms.Label();
-            this.textBox_rab1 = new System.Windows.Forms.TextBox();
+            this.textBox_rab = new System.Windows.Forms.TextBox();
             this.button_prev = new System.Windows.Forms.Button();
             this.button_form = new System.Windows.Forms.Button();
             this.tableLayoutPanel_svodka = new System.Windows.Forms.TableLayoutPanel();
@@ -100,7 +100,7 @@
             this.Column9_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9_3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9_4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.linkLabel_New = new System.Windows.Forms.LinkLabel();
+            this.linkLabel_Utverd = new System.Windows.Forms.LinkLabel();
             this.comboBox_organiz = new System.Windows.Forms.ComboBox();
             this.comboBox_podrazdel = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -108,6 +108,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox_button = new System.Windows.Forms.GroupBox();
+            this.linkLabel_NewForm = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel_Head.SuspendLayout();
             this.tableLayoutPanel_svodka.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -314,7 +315,7 @@
             this.tableLayoutPanel_Head.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel_Head.Controls.Add(this.label_1, 0, 3);
             this.tableLayoutPanel_Head.Controls.Add(this.label_2, 1, 3);
-            this.tableLayoutPanel_Head.Controls.Add(this.textBox_rab1, 6, 1);
+            this.tableLayoutPanel_Head.Controls.Add(this.textBox_rab, 6, 1);
             this.tableLayoutPanel_Head.Controls.Add(this.button_prev, 5, 1);
             this.tableLayoutPanel_Head.Location = new System.Drawing.Point(28, 262);
             this.tableLayoutPanel_Head.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
@@ -653,21 +654,21 @@
             this.label_2.Text = "2";
             this.label_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox_rab1
+            // textBox_rab
             // 
-            this.tableLayoutPanel_Head.SetColumnSpan(this.textBox_rab1, 6);
-            this.textBox_rab1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_rab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_rab1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_rab1.Location = new System.Drawing.Point(741, 35);
-            this.textBox_rab1.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox_rab1.MaxLength = 150;
-            this.textBox_rab1.Multiline = true;
-            this.textBox_rab1.Name = "textBox_rab1";
-            this.textBox_rab1.Size = new System.Drawing.Size(342, 35);
-            this.textBox_rab1.TabIndex = 28;
-            this.textBox_rab1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox_rab1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_rab1_KeyPress);
+            this.tableLayoutPanel_Head.SetColumnSpan(this.textBox_rab, 6);
+            this.textBox_rab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_rab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_rab.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBox_rab.Location = new System.Drawing.Point(741, 35);
+            this.textBox_rab.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox_rab.MaxLength = 150;
+            this.textBox_rab.Multiline = true;
+            this.textBox_rab.Name = "textBox_rab";
+            this.textBox_rab.Size = new System.Drawing.Size(342, 35);
+            this.textBox_rab.TabIndex = 28;
+            this.textBox_rab.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_rab.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_rab_KeyPress);
             // 
             // button_prev
             // 
@@ -691,7 +692,7 @@
             this.button_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_form.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_form.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_form.Location = new System.Drawing.Point(1052, 759);
+            this.button_form.Location = new System.Drawing.Point(1048, 709);
             this.button_form.Name = "button_form";
             this.button_form.Size = new System.Drawing.Size(120, 40);
             this.button_form.TabIndex = 48;
@@ -850,14 +851,14 @@
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.ColumnHeadersVisible = false;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -882,14 +883,14 @@
             this.Column9_2,
             this.Column9_3,
             this.Column9_4});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView.Location = new System.Drawing.Point(28, 382);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridView.Name = "dataGridView";
@@ -1047,20 +1048,20 @@
             this.Column9_4.Name = "Column9_4";
             this.Column9_4.Visible = false;
             // 
-            // linkLabel_New
+            // linkLabel_Utverd
             // 
-            this.linkLabel_New.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.linkLabel_New.AutoSize = true;
-            this.linkLabel_New.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel_New.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel_New.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabel_New.Location = new System.Drawing.Point(24, 727);
-            this.linkLabel_New.Name = "linkLabel_New";
-            this.linkLabel_New.Size = new System.Drawing.Size(198, 21);
-            this.linkLabel_New.TabIndex = 73;
-            this.linkLabel_New.TabStop = true;
-            this.linkLabel_New.Text = "Утверждение подписей";
-            this.linkLabel_New.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_New_LinkClicked);
+            this.linkLabel_Utverd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.linkLabel_Utverd.AutoSize = true;
+            this.linkLabel_Utverd.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel_Utverd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel_Utverd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.linkLabel_Utverd.Location = new System.Drawing.Point(24, 709);
+            this.linkLabel_Utverd.Name = "linkLabel_Utverd";
+            this.linkLabel_Utverd.Size = new System.Drawing.Size(198, 21);
+            this.linkLabel_Utverd.TabIndex = 73;
+            this.linkLabel_Utverd.TabStop = true;
+            this.linkLabel_Utverd.Text = "Утверждение подписей";
+            this.linkLabel_Utverd.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_Utverd_LinkClicked);
             // 
             // comboBox_organiz
             // 
@@ -1172,15 +1173,30 @@
             this.groupBox_button.TabIndex = 108;
             this.groupBox_button.TabStop = false;
             // 
+            // linkLabel_NewForm
+            // 
+            this.linkLabel_NewForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkLabel_NewForm.AutoSize = true;
+            this.linkLabel_NewForm.Font = new System.Drawing.Font("Times New Roman", 14.25F);
+            this.linkLabel_NewForm.Location = new System.Drawing.Point(892, 728);
+            this.linkLabel_NewForm.Name = "linkLabel_NewForm";
+            this.linkLabel_NewForm.Size = new System.Drawing.Size(150, 21);
+            this.linkLabel_NewForm.TabIndex = 109;
+            this.linkLabel_NewForm.TabStop = true;
+            this.linkLabel_NewForm.Text = "Заполнить новую";
+            this.linkLabel_NewForm.Visible = false;
+            this.linkLabel_NewForm.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_NewForm_LinkClicked);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 811);
+            this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.linkLabel_NewForm);
             this.Controls.Add(this.groupBox_button);
             this.Controls.Add(this.comboBox_podrazdel);
             this.Controls.Add(this.comboBox_organiz);
-            this.Controls.Add(this.linkLabel_New);
+            this.Controls.Add(this.linkLabel_Utverd);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.dateTimePicker_PO);
             this.Controls.Add(this.dateTimePicker_S);
@@ -1201,10 +1217,11 @@
             this.Controls.Add(this.textBox_OKDP);
             this.Controls.Add(this.textBox_OKPO);
             this.Controls.Add(this.textBox_kod);
-            this.MinimumSize = new System.Drawing.Size(1200, 850);
+            this.MinimumSize = new System.Drawing.Size(1200, 800);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Унифицированная форма № ОП-19";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.tableLayoutPanel_Head.ResumeLayout(false);
@@ -1250,7 +1267,7 @@
         private System.Windows.Forms.Label label_5;
         private System.Windows.Forms.Label label_4;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox textBox_rab1;
+        private System.Windows.Forms.TextBox textBox_rab;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label39;
@@ -1267,7 +1284,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker_S;
         private System.Windows.Forms.DateTimePicker dateTimePicker_PO;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.LinkLabel linkLabel_New;
+        private System.Windows.Forms.LinkLabel linkLabel_Utverd;
         private System.Windows.Forms.ComboBox comboBox_organiz;
         private System.Windows.Forms.ComboBox comboBox_podrazdel;
         private System.Windows.Forms.Button button_next;
@@ -1298,5 +1315,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9_2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9_3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9_4;
+        private System.Windows.Forms.LinkLabel linkLabel_NewForm;
     }
 }

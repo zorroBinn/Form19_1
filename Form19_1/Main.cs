@@ -28,7 +28,6 @@ namespace Form19_1
         {
             InitializeComponent();
             this.dateTimePicker_PO.MinDate = this.dateTimePicker_S.Value;
-            this.dateTimePicker_PO.MaxDate = new DateTime(this.dateTimePicker_S.Value.Year, 12, 31);
             this.dateTimePicker.MinDate = this.dateTimePicker_S.Value;
             buttons = new Button[] { button1, button2, button3, button4 };
             sumLabels = new System.Windows.Forms.Label[] { label_sum6, label_sum7, label_sum8, label_sum9 };
@@ -105,7 +104,7 @@ namespace Form19_1
 
         }
 
-        private void linkLabel_New_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel_Utverd_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             using (Podpis child = new Podpis(this))
             {
@@ -117,7 +116,7 @@ namespace Form19_1
 
         public void UpdateButtonColor()
         {
-            linkLabel_New.LinkColor = Color.Green;
+            linkLabel_Utverd.LinkColor = Color.Green;
         }
 
         private void ResizeColumnsToLabels()
@@ -264,7 +263,7 @@ namespace Form19_1
             allFilled &= HighlightIfEmpty(comboBox_podrazdel);
             allFilled &= HighlightIfEmpty(textBox_OKPO);
             allFilled &= HighlightIfEmpty(textBox_OKDP);
-            allFilled &= HighlightIfEmpty(linkLabel_New);
+            allFilled &= HighlightIfEmpty(linkLabel_Utverd);
             allFilled &= HighlightIfEmpty(dataGridView);
 
             if (allFilled)
@@ -301,6 +300,7 @@ namespace Form19_1
                             File.Copy(templatePath, targetPath, true); //Копируем шаблон
                             FillExcelFile(targetPath); //Заполняем файл
                             MessageBox.Show("Экспорт выполнен успешно!", "Готово", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.linkLabel_NewForm.Visible = true;
                         }
                         catch (Exception ex)
                         {
@@ -315,29 +315,43 @@ namespace Form19_1
         {
             Excel.Application excelApp = new Excel.Application();
             Excel.Workbook workbook = excelApp.Workbooks.Open(filePath);
-            Excel.Worksheet worksheet = workbook.Sheets[1]; // Первый лист
+            Excel.Worksheet worksheet = workbook.Sheets[1]; //Первый лист
 
             try
             {
-                // Функция для получения названия месяца в родительном падеже
+                //Функция для получения названия месяца в родительном падеже
                 string GetMonthName(DateTime date)
                 {
                     return date.ToString("MMMM", new CultureInfo("ru-RU"));
                 }
 
-                // Заполняем ячейки по заданным координатам
-                worksheet.Cells[6, 1] = comboBox_organiz.Text.Trim(); // A6
-                worksheet.Cells[8, 1] = comboBox_podrazdel.Text.Trim(); // A8
-                worksheet.Cells[6, 69] = textBox_OKPO.Text.Trim(); // BQ6
-                worksheet.Cells[9, 69] = textBox_OKDP.Text.Trim(); // BQ9
+                //Заполняем ячейки по заданным координатам
+                worksheet.Cells[6, 1] = comboBox_organiz.Text.Trim(); //A6
+                worksheet.Cells[8, 1] = comboBox_podrazdel.Text.Trim(); //A8
+                worksheet.Cells[6, 69] = textBox_OKPO.Text.Trim(); //BQ6
+                worksheet.Cells[9, 69] = textBox_OKDP.Text.Trim(); //BQ9
 
-                worksheet.Cells[18, 25] = dateTimePicker_S.Value.Day + " " + GetMonthName(dateTimePicker_S.Value); // Y18 (день месяц)
-                worksheet.Cells[18, 39] = dateTimePicker_PO.Value.Day + " " + GetMonthName(dateTimePicker_PO.Value); // AM18 (день месяц)
-                worksheet.Cells[18, 52] = dateTimePicker_S.Value.Year; // AZ18 (год)
+                worksheet.Cells[18, 25] = dateTimePicker_S.Value.Day + " " + GetMonthName(dateTimePicker_S.Value); //Y18 (день месяц)
+                worksheet.Cells[18, 39] = dateTimePicker_PO.Value.Day + " " + GetMonthName(dateTimePicker_PO.Value); //AM18 (день месяц)
+                worksheet.Cells[18, 52] = dateTimePicker_S.Value.Year; //AZ18 (год)
 
-                worksheet.Cells[35, 57] = dateTimePicker.Value.Day; // BE35 (день)
-                worksheet.Cells[35, 59] = GetMonthName(dateTimePicker.Value); // BG35 (месяц)
-                worksheet.Cells[35, 70] = dateTimePicker.Value.Year; // BR35 (год)
+                worksheet.Cells[35, 57] = dateTimePicker.Value.Day; //BE35 (день)
+                worksheet.Cells[35, 59] = GetMonthName(dateTimePicker.Value); //BG35 (месяц)
+                worksheet.Cells[35, 70] = dateTimePicker.Value.Year; //BR35 (год)
+
+                //Читаем данные из файла подписей
+                string podpisFile = "00p11o22d33p44i55s66.csv";
+                if (File.Exists(podpisFile))
+                {
+                    string[] podpisLines = File.ReadAllLines(podpisFile);
+                    if (podpisLines.Length >= 4)
+                    {
+                        worksheet.Cells[23, 25] = podpisLines[0].Trim(); //Y23
+                        worksheet.Cells[23, 37] = podpisLines[1].Trim(); //AK23
+                        worksheet.Cells[67, 19] = podpisLines[2].Trim(); //S67
+                        worksheet.Cells[67, 45] = podpisLines[3].Trim(); //AS67
+                    }
+                }
 
                 workbook.Save();
                 workbook.Close();
@@ -355,7 +369,7 @@ namespace Form19_1
             }
         }
 
-        // Освобождение ресурсов Excel
+        //Освобождение ресурсов Excel
         private void ReleaseObject(object obj)
         {
             try
@@ -480,7 +494,7 @@ namespace Form19_1
             }
         }
 
-        private void textBox_rab1_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox_rab_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Delete)
             {
@@ -540,6 +554,44 @@ namespace Form19_1
             {
                 comboBox_podrazdel.Items.AddRange(organizationData[selectedOrg].ToArray());
             }
+        }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (File.Exists("00p11o22d33p44i55s66.csv"))
+            {
+                File.Delete("00p11o22d33p44i55s66.csv");
+            }
+        }
+
+        private void linkLabel_NewForm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Вы уверены, что хотите очистить форму и перейти к новой?",
+                                          "Подтверждение",
+                                          MessageBoxButtons.YesNo,
+                                          MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                foreach (Control ctrl in this.Controls)
+                {
+                    if (ctrl is TextBox textBox)
+                        textBox.Clear();
+                }
+                this.textBox_rab.Clear();
+                foreach (Control ctrl in this.Controls)
+                {
+                    if (ctrl is ComboBox comboBox)
+                        comboBox.SelectedIndex = -1;
+                }
+                dataGridView.Rows.Clear();
+                foreach (Control ctrl in this.Controls)
+                {
+                    if (ctrl is DateTimePicker dateTimePicker)
+                        dateTimePicker.Value = dateTimePicker.MinDate;
+                }
+            }
+            this.linkLabel_NewForm.Visible = false;
         }
     }
 }

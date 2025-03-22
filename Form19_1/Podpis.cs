@@ -17,12 +17,32 @@ namespace Form19_1
     {
         private Main parentForm;
         private string dolzhnostFile = "dolzhnostBase.csv";
+        private string podpisFile = "00p11o22d33p44i55s66.csv";
 
         public Podpis(Main parent)
         {
             InitializeComponent();
             this.parentForm = parent;
             LoadDolzhnosti();
+            LoadPodpisData();
+        }
+
+        private void LoadPodpisData()
+        {
+            if (!File.Exists(podpisFile))
+            {
+                // Создаём файл с пустыми строками при первом запуске
+                File.WriteAllLines(podpisFile, new string[] { "", "", "", "" });
+            }
+
+            string[] lines = File.ReadAllLines(podpisFile);
+            if (lines.Length >= 4)
+            {
+                comboBox_dolg1.Text = lines[0].Trim();
+                textBox_fio1.Text = lines[1].Trim();
+                comboBox_dolg2.Text = lines[2].Trim();
+                textBox_fio2.Text = lines[3].Trim();
+            }
         }
 
         private void LoadDolzhnosti()
@@ -84,6 +104,17 @@ namespace Form19_1
                 SaveDolzhnost(comboBox_dolg2.Text);
                 parentForm.UpdateButtonColor();
                 this.Close();
+                {
+                    string[] lines =
+                    {
+                        comboBox_dolg1.Text.Trim(),
+                        textBox_fio1.Text.Trim(),
+                        comboBox_dolg2.Text.Trim(),
+                        textBox_fio2.Text.Trim()
+                    };
+
+                    File.WriteAllLines(podpisFile, lines);
+                }
             }
         }
 
