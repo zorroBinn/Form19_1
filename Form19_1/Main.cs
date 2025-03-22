@@ -22,7 +22,7 @@ namespace Form19_1
         private System.Windows.Forms.Label[] nomberLabels;
         private string organizationBaseFilePath = "organizationBase.csv";
         private Dictionary<string, List<string>> organizationData = new Dictionary<string, List<string>>();
-
+        private Dictionary<int, string> workersBySet = new Dictionary<int, string>();
 
         public Main()
         {
@@ -35,6 +35,9 @@ namespace Form19_1
             LoadOrganizations();
         }
 
+        ///<summary>
+        ///Автоинкрементирование номера строк
+        ///</summary>
         private void UpdateRowNumbers()
         {
             for (int i = 0; i < dataGridView.Rows.Count; i++)
@@ -43,6 +46,9 @@ namespace Form19_1
             }
         }
 
+        ///<summary>
+        ///Загрузка организаций и подразделений
+        ///</summary>
         private void LoadOrganizations()
         {
             if (!File.Exists(organizationBaseFilePath)) return;
@@ -84,6 +90,9 @@ namespace Form19_1
             UpdateSums();
         }
 
+        ///<summary>
+        ///Удаление выбранной строки
+        ///</summary>
         private void DeleteSelectedRow()
         {
             if (dataGridView.CurrentRow != null && !dataGridView.CurrentRow.IsNewRow)
@@ -119,6 +128,9 @@ namespace Form19_1
             linkLabel_Utverd.LinkColor = Color.Green;
         }
 
+        ///<summary>
+        ///При изменении размеров окна размеры столбцов делать равным размеру лейблов-заголовков
+        ///</summary>
         private void ResizeColumnsToLabels()
         {
             for (int i = 0; i < 9; i++)
@@ -159,7 +171,11 @@ namespace Form19_1
             this.dateTimePicker.MinDate = this.dateTimePicker_S.Value;
         }
 
-        //Функция проверки, заполнена ли первая строка таблицы
+        ///<summary>
+        ///Функция проверки, заполнена ли первая строка таблицы
+        ///</summary>
+        ///<param name="dgv"> Таблица для проверки </param>
+        ///<returns></returns>
         private bool IsFirstRowEmpty(DataGridView dgv)
         {
             if (dgv.Rows.Count == 0) return true;
@@ -200,6 +216,11 @@ namespace Form19_1
             return true;
         }
 
+        ///<summary>
+        ///Выделение незаполненного элемента
+        ///</summary>
+        ///<param name="control"> Элемент </param>
+        ///<returns></returns>
         private bool HighlightIfEmpty(Control control)
         {
             Dictionary<Control, Color> originalColors = new Dictionary<Control, Color>();
@@ -241,6 +262,9 @@ namespace Form19_1
             return true;
         }
 
+        ///<summary>
+        ///Запоминание вводимых организаций/подразделений
+        ///</summary>
         private void SaveOrganizations()
         {
             List<string> lines = new List<string>();
@@ -311,6 +335,10 @@ namespace Form19_1
             }
         }
 
+        ///<summary>
+        ///Экспорт в Excel файл (заполнение по шаблону)
+        ///</summary>
+        ///<param name="filePath"></param>
         private void FillExcelFile(string filePath)
         {
             Excel.Application excelApp = new Excel.Application();
@@ -353,6 +381,44 @@ namespace Form19_1
                     }
                 }
 
+                //Заполняем таблицу
+                Dictionary<int, string> workerCells = new Dictionary<int, string>
+                {
+                    { 1, "Y39" }, { 2, "AL39" }, { 3, "AY39" }, { 4, "BL39" }
+                };
+
+                foreach (var set in workersBySet)
+                {
+                    if (workerCells.ContainsKey(set.Key))
+                    {
+                        worksheet.Range[workerCells[set.Key]].Value = set.Value.Trim();
+                    }
+                }
+
+                //int maxRows = Math.Min(20, dataGridView.Rows.Count);
+                //Dictionary<int, string> columnMap = new Dictionary<int, string>
+                //{
+                //    { 1, "A" }, { 2, "E" }, { 3, "O" }, { 4, "R" }, { 5, "U" },
+                //    { 6, "Y" }, { 7, "AB" }, { 8, "AF" }, { 9, "AI" },
+                //    { 10, "AL" }, { 11, "AO" }, { 12, "AS" }, { 13, "AV" },
+                //    { 14, "AY" }, { 15, "BB" }, { 16, "BF" }, { 17, "BI" },
+                //    { 18, "BL" }, { 19, "BO" }, { 20, "BS" }, { 21, "BV" }
+                //};
+                //for (int rowIndex = 0; rowIndex < maxRows; rowIndex++)
+                //{
+                //    int excelRow = 44 + rowIndex; //Excel строки 44-63
+                //    for (int col = 0; col < dataGridView.Columns.Count; col++)
+                //    {
+                //        string columnName = dataGridView.Columns[col].Name;
+                //        if (!columnMap.ContainsKey(col + 1)) continue; //Проверяем, есть ли колонка в мапе
+
+                //        if (dataGridView.Rows[rowIndex].Cells[col].Value != null)
+                //        {
+                //            worksheet.Cells[excelRow, columnMap[col + 1]] = dataGridView.Rows[rowIndex].Cells[col].Value.ToString();
+                //        }
+                //    }
+                //}
+
                 workbook.Save();
                 workbook.Close();
                 excelApp.Quit();
@@ -369,7 +435,10 @@ namespace Form19_1
             }
         }
 
-        //Освобождение ресурсов Excel
+        ///<summary>
+        ///Освобождение ресурсов Excel
+        ///</summary>
+        ///<param name="obj"> Освобождаемый объект </param>
         private void ReleaseObject(object obj)
         {
             try
@@ -381,6 +450,10 @@ namespace Form19_1
             finally { GC.Collect(); }
         }
 
+        ///<summary>
+        ///Изменение сета работников
+        ///</summary>
+        ///<param name="set"> Номер сета </param>
         private void SwitchColumnSet(int set)
         {
             if (set < 1 || set > 4) return;
@@ -409,6 +482,8 @@ namespace Form19_1
 
             //Обновляем суммы
             UpdateSums();
+            //Обновляем текст в textBox_rab
+            textBox_rab.Text = workersBySet.ContainsKey(set) ? workersBySet[set] : "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -453,6 +528,9 @@ namespace Form19_1
                 UpdateSums();
         }
 
+        ///<summary>
+        ///Сводка по количеству (сумма)
+        ///</summary>
         private void UpdateSums()
         {
             for (int i = 6; i <= 9; i++) //Столбцы 6-9
@@ -592,6 +670,15 @@ namespace Form19_1
                 }
             }
             this.linkLabel_NewForm.Visible = false;
+            if (File.Exists("00p11o22d33p44i55s66.csv"))
+            {
+                File.Delete("00p11o22d33p44i55s66.csv");
+            }
+        }
+
+        private void textBox_rab_TextChanged(object sender, EventArgs e)
+        {
+            workersBySet[currentSet] = textBox_rab.Text.Trim();
         }
     }
 }

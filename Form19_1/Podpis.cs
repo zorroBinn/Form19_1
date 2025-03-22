@@ -31,7 +31,7 @@ namespace Form19_1
         {
             if (!File.Exists(podpisFile))
             {
-                // Создаём файл с пустыми строками при первом запуске
+                //Создаём файл с пустыми строками при первом запуске
                 File.WriteAllLines(podpisFile, new string[] { "", "", "", "" });
             }
 

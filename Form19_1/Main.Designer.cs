@@ -79,6 +79,15 @@
             this.dateTimePicker_S = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_PO = new System.Windows.Forms.DateTimePicker();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.linkLabel_Utverd = new System.Windows.Forms.LinkLabel();
+            this.comboBox_organiz = new System.Windows.Forms.ComboBox();
+            this.comboBox_podrazdel = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox_button = new System.Windows.Forms.GroupBox();
+            this.linkLabel_NewForm = new System.Windows.Forms.LinkLabel();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -100,15 +109,6 @@
             this.Column9_2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9_3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9_4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.linkLabel_Utverd = new System.Windows.Forms.LinkLabel();
-            this.comboBox_organiz = new System.Windows.Forms.ComboBox();
-            this.comboBox_podrazdel = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.groupBox_button = new System.Windows.Forms.GroupBox();
-            this.linkLabel_NewForm = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel_Head.SuspendLayout();
             this.tableLayoutPanel_svodka.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -668,6 +668,7 @@
             this.textBox_rab.Size = new System.Drawing.Size(342, 35);
             this.textBox_rab.TabIndex = 28;
             this.textBox_rab.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_rab.TextChanged += new System.EventHandler(this.textBox_rab_TextChanged);
             this.textBox_rab.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_rab_KeyPress);
             // 
             // button_prev
@@ -903,151 +904,6 @@
             this.dataGridView.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dataGridView_RowsRemoved);
             this.dataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView_KeyDown);
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "1";
-            this.Column1.MinimumWidth = 55;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "2";
-            this.Column2.MinimumWidth = 456;
-            this.Column2.Name = "Column2";
-            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "3";
-            this.Column3.MaxInputLength = 12;
-            this.Column3.MinimumWidth = 57;
-            this.Column3.Name = "Column3";
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "4";
-            this.Column4.MinimumWidth = 57;
-            this.Column4.Name = "Column4";
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "5";
-            this.Column5.MaxInputLength = 12;
-            this.Column5.MinimumWidth = 57;
-            this.Column5.Name = "Column5";
-            // 
-            // Column6_1
-            // 
-            this.Column6_1.HeaderText = "6_1";
-            this.Column6_1.MinimumWidth = 114;
-            this.Column6_1.Name = "Column6_1";
-            // 
-            // Column6_2
-            // 
-            this.Column6_2.HeaderText = "6_2";
-            this.Column6_2.MinimumWidth = 114;
-            this.Column6_2.Name = "Column6_2";
-            this.Column6_2.Visible = false;
-            // 
-            // Column6_3
-            // 
-            this.Column6_3.HeaderText = "6_3";
-            this.Column6_3.MinimumWidth = 114;
-            this.Column6_3.Name = "Column6_3";
-            this.Column6_3.Visible = false;
-            // 
-            // Column6_4
-            // 
-            this.Column6_4.HeaderText = "6_4";
-            this.Column6_4.MinimumWidth = 114;
-            this.Column6_4.Name = "Column6_4";
-            this.Column6_4.Visible = false;
-            // 
-            // Column7_1
-            // 
-            this.Column7_1.HeaderText = "7_1";
-            this.Column7_1.MinimumWidth = 114;
-            this.Column7_1.Name = "Column7_1";
-            // 
-            // Column7_2
-            // 
-            this.Column7_2.HeaderText = "7_2";
-            this.Column7_2.MinimumWidth = 114;
-            this.Column7_2.Name = "Column7_2";
-            this.Column7_2.Visible = false;
-            // 
-            // Column7_3
-            // 
-            this.Column7_3.HeaderText = "7_3";
-            this.Column7_3.MinimumWidth = 114;
-            this.Column7_3.Name = "Column7_3";
-            this.Column7_3.Visible = false;
-            // 
-            // Column7_4
-            // 
-            this.Column7_4.HeaderText = "7_4";
-            this.Column7_4.MinimumWidth = 114;
-            this.Column7_4.Name = "Column7_4";
-            this.Column7_4.Visible = false;
-            // 
-            // Column8_1
-            // 
-            this.Column8_1.HeaderText = "8_1";
-            this.Column8_1.MinimumWidth = 114;
-            this.Column8_1.Name = "Column8_1";
-            // 
-            // Column8_2
-            // 
-            this.Column8_2.HeaderText = "8_2";
-            this.Column8_2.MinimumWidth = 114;
-            this.Column8_2.Name = "Column8_2";
-            this.Column8_2.Visible = false;
-            // 
-            // Column8_3
-            // 
-            this.Column8_3.HeaderText = "8_3";
-            this.Column8_3.MinimumWidth = 114;
-            this.Column8_3.Name = "Column8_3";
-            this.Column8_3.Visible = false;
-            // 
-            // Column8_4
-            // 
-            this.Column8_4.HeaderText = "8_4";
-            this.Column8_4.MinimumWidth = 114;
-            this.Column8_4.Name = "Column8_4";
-            this.Column8_4.Visible = false;
-            // 
-            // Column9_1
-            // 
-            this.Column9_1.HeaderText = "9_1";
-            this.Column9_1.MinimumWidth = 114;
-            this.Column9_1.Name = "Column9_1";
-            // 
-            // Column9_2
-            // 
-            this.Column9_2.HeaderText = "9_2";
-            this.Column9_2.MinimumWidth = 114;
-            this.Column9_2.Name = "Column9_2";
-            this.Column9_2.Visible = false;
-            // 
-            // Column9_3
-            // 
-            this.Column9_3.HeaderText = "9_3";
-            this.Column9_3.MinimumWidth = 114;
-            this.Column9_3.Name = "Column9_3";
-            this.Column9_3.Visible = false;
-            // 
-            // Column9_4
-            // 
-            this.Column9_4.HeaderText = "9-4";
-            this.Column9_4.MinimumWidth = 114;
-            this.Column9_4.Name = "Column9_4";
-            this.Column9_4.Visible = false;
-            // 
             // linkLabel_Utverd
             // 
             this.linkLabel_Utverd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -1187,6 +1043,166 @@
             this.linkLabel_NewForm.Visible = false;
             this.linkLabel_NewForm.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_NewForm_LinkClicked);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "1";
+            this.Column1.MinimumWidth = 55;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "2";
+            this.Column2.MinimumWidth = 456;
+            this.Column2.Name = "Column2";
+            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "3";
+            this.Column3.MaxInputLength = 20;
+            this.Column3.MinimumWidth = 57;
+            this.Column3.Name = "Column3";
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "4";
+            this.Column4.MaxInputLength = 20;
+            this.Column4.MinimumWidth = 57;
+            this.Column4.Name = "Column4";
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "5";
+            this.Column5.MaxInputLength = 6;
+            this.Column5.MinimumWidth = 57;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6_1
+            // 
+            this.Column6_1.HeaderText = "6_1";
+            this.Column6_1.MaxInputLength = 4;
+            this.Column6_1.MinimumWidth = 114;
+            this.Column6_1.Name = "Column6_1";
+            // 
+            // Column6_2
+            // 
+            this.Column6_2.HeaderText = "6_2";
+            this.Column6_2.MaxInputLength = 4;
+            this.Column6_2.MinimumWidth = 114;
+            this.Column6_2.Name = "Column6_2";
+            this.Column6_2.Visible = false;
+            // 
+            // Column6_3
+            // 
+            this.Column6_3.HeaderText = "6_3";
+            this.Column6_3.MaxInputLength = 4;
+            this.Column6_3.MinimumWidth = 114;
+            this.Column6_3.Name = "Column6_3";
+            this.Column6_3.Visible = false;
+            // 
+            // Column6_4
+            // 
+            this.Column6_4.HeaderText = "6_4";
+            this.Column6_4.MaxInputLength = 4;
+            this.Column6_4.MinimumWidth = 114;
+            this.Column6_4.Name = "Column6_4";
+            this.Column6_4.Visible = false;
+            // 
+            // Column7_1
+            // 
+            this.Column7_1.HeaderText = "7_1";
+            this.Column7_1.MaxInputLength = 4;
+            this.Column7_1.MinimumWidth = 114;
+            this.Column7_1.Name = "Column7_1";
+            // 
+            // Column7_2
+            // 
+            this.Column7_2.HeaderText = "7_2";
+            this.Column7_2.MaxInputLength = 4;
+            this.Column7_2.MinimumWidth = 114;
+            this.Column7_2.Name = "Column7_2";
+            this.Column7_2.Visible = false;
+            // 
+            // Column7_3
+            // 
+            this.Column7_3.HeaderText = "7_3";
+            this.Column7_3.MaxInputLength = 4;
+            this.Column7_3.MinimumWidth = 114;
+            this.Column7_3.Name = "Column7_3";
+            this.Column7_3.Visible = false;
+            // 
+            // Column7_4
+            // 
+            this.Column7_4.HeaderText = "7_4";
+            this.Column7_4.MinimumWidth = 114;
+            this.Column7_4.Name = "Column7_4";
+            this.Column7_4.Visible = false;
+            // 
+            // Column8_1
+            // 
+            this.Column8_1.HeaderText = "8_1";
+            this.Column8_1.MaxInputLength = 4;
+            this.Column8_1.MinimumWidth = 114;
+            this.Column8_1.Name = "Column8_1";
+            // 
+            // Column8_2
+            // 
+            this.Column8_2.HeaderText = "8_2";
+            this.Column8_2.MaxInputLength = 4;
+            this.Column8_2.MinimumWidth = 114;
+            this.Column8_2.Name = "Column8_2";
+            this.Column8_2.Visible = false;
+            // 
+            // Column8_3
+            // 
+            this.Column8_3.HeaderText = "8_3";
+            this.Column8_3.MaxInputLength = 4;
+            this.Column8_3.MinimumWidth = 114;
+            this.Column8_3.Name = "Column8_3";
+            this.Column8_3.Visible = false;
+            // 
+            // Column8_4
+            // 
+            this.Column8_4.HeaderText = "8_4";
+            this.Column8_4.MaxInputLength = 4;
+            this.Column8_4.MinimumWidth = 114;
+            this.Column8_4.Name = "Column8_4";
+            this.Column8_4.Visible = false;
+            // 
+            // Column9_1
+            // 
+            this.Column9_1.HeaderText = "9_1";
+            this.Column9_1.MinimumWidth = 114;
+            this.Column9_1.Name = "Column9_1";
+            // 
+            // Column9_2
+            // 
+            this.Column9_2.HeaderText = "9_2";
+            this.Column9_2.MaxInputLength = 4;
+            this.Column9_2.MinimumWidth = 114;
+            this.Column9_2.Name = "Column9_2";
+            this.Column9_2.Visible = false;
+            // 
+            // Column9_3
+            // 
+            this.Column9_3.HeaderText = "9_3";
+            this.Column9_3.MaxInputLength = 4;
+            this.Column9_3.MinimumWidth = 114;
+            this.Column9_3.Name = "Column9_3";
+            this.Column9_3.Visible = false;
+            // 
+            // Column9_4
+            // 
+            this.Column9_4.HeaderText = "9-4";
+            this.Column9_4.MaxInputLength = 4;
+            this.Column9_4.MinimumWidth = 114;
+            this.Column9_4.Name = "Column9_4";
+            this.Column9_4.Visible = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1294,6 +1310,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox_button;
+        private System.Windows.Forms.LinkLabel linkLabel_NewForm;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -1315,6 +1332,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9_2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9_3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9_4;
-        private System.Windows.Forms.LinkLabel linkLabel_NewForm;
     }
 }
