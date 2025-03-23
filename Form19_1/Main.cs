@@ -395,29 +395,89 @@ namespace Form19_1
                     }
                 }
 
-                //int maxRows = Math.Min(20, dataGridView.Rows.Count);
-                //Dictionary<int, string> columnMap = new Dictionary<int, string>
-                //{
-                //    { 1, "A" }, { 2, "E" }, { 3, "O" }, { 4, "R" }, { 5, "U" },
-                //    { 6, "Y" }, { 7, "AB" }, { 8, "AF" }, { 9, "AI" },
-                //    { 10, "AL" }, { 11, "AO" }, { 12, "AS" }, { 13, "AV" },
-                //    { 14, "AY" }, { 15, "BB" }, { 16, "BF" }, { 17, "BI" },
-                //    { 18, "BL" }, { 19, "BO" }, { 20, "BS" }, { 21, "BV" }
-                //};
-                //for (int rowIndex = 0; rowIndex < maxRows; rowIndex++)
-                //{
-                //    int excelRow = 44 + rowIndex; //Excel строки 44-63
-                //    for (int col = 0; col < dataGridView.Columns.Count; col++)
-                //    {
-                //        string columnName = dataGridView.Columns[col].Name;
-                //        if (!columnMap.ContainsKey(col + 1)) continue; //Проверяем, есть ли колонка в мапе
+                int maxRows = Math.Min(20, dataGridView.Rows.Count);
+                int excelRowStart = 44; // Начальная строка в Excel
+                List<string> orderedColumns = new List<string>();
+                // Добавляем сначала первые 5 столбцов (Column1 - Column5)
+                for (int i = 1; i <= 5; i++)
+                {
+                    orderedColumns.Add($"Column{i}");
+                }
+                // Затем добавляем столбцы по сетам (Column6_1 - Column9_4)
+                for (int set = 1; set <= 4; set++)
+                {
+                    for (int col = 6; col <= 9; col++)
+                    {
+                        orderedColumns.Add($"Column{col}_{set}");
+                    }
+                }
+                // Сопоставление с колонками Excel
+                Dictionary<string, string> columnMap = new Dictionary<string, string>
+                {
+                    { "Column1", "A" }, { "Column2", "E" }, { "Column3", "O" }, { "Column4", "R" }, { "Column5", "U" },
+                    { "Column6_1", "Y" }, { "Column7_1", "AB" }, { "Column8_1", "AF" }, { "Column9_1", "AI" },
+                    { "Column6_2", "AL" }, { "Column7_2", "AO" }, { "Column8_2", "AS" }, { "Column9_2", "AV" },
+                    { "Column6_3", "AY" }, { "Column7_3", "BB" }, { "Column8_3", "BF" }, { "Column9_3", "BI" },
+                    { "Column6_4", "BL" }, { "Column7_4", "BO" }, { "Column8_4", "BS" }, { "Column9_4", "BV" }
+                };
+                Dictionary<string, double> columnSums = new Dictionary<string, double>(); //Словарь для хранения сумм по каждому столбцу
+                for (int rowIndex = 0; rowIndex < maxRows; rowIndex++)
+                {
+                    int excelRow = excelRowStart + rowIndex; // Excel строки 44-63
 
-                //        if (dataGridView.Rows[rowIndex].Cells[col].Value != null)
-                //        {
-                //            worksheet.Cells[excelRow, columnMap[col + 1]] = dataGridView.Rows[rowIndex].Cells[col].Value.ToString();
-                //        }
-                //    }
-                //}
+                    foreach (string columnName in orderedColumns)
+                    {
+                        if (!dataGridView.Columns.Contains(columnName)) continue;
+                        int colIndex = dataGridView.Columns[columnName].Index;
+                        if (dataGridView.Rows[rowIndex].Cells[colIndex].Value != null)
+                        {
+                            string excelColumn = columnMap[columnName];
+                            worksheet.Cells[excelRow, excelColumn] = dataGridView.Rows[rowIndex].Cells[colIndex].Value.ToString();
+                        }
+                    }
+                }
+
+                // Подсчитываем суммы по каждому столбцу сетов
+                foreach (int set in new int[] { 1, 2, 3, 4 }) // Перебираем 4 сета
+                {
+                    bool isSetEmpty = true; // Флаг, пуст ли сет полностью
+                    Dictionary<string, double> tempSums = new Dictionary<string, double>(); // Временное хранилище сумм столбцов сета
+
+                    for (int col = 6; col <= 9; col++) // Перебираем столбцы Column6_X - Column9_X
+                    {
+                        string columnName = $"Column{col}_{set}";
+
+                        if (!dataGridView.Columns.Contains(columnName)) continue;
+
+                        int colIndex = dataGridView.Columns[columnName].Index;
+                        double sum = 0;
+
+                        for (int rowIndex = 0; rowIndex < maxRows; rowIndex++)
+                        {
+                            if (dataGridView.Rows[rowIndex].Cells[colIndex].Value != null &&
+                                double.TryParse(dataGridView.Rows[rowIndex].Cells[colIndex].Value.ToString(), out double value))
+                            {
+                                sum += value;
+                                isSetEmpty = false; // Нашли хотя бы одно число — сет не пустой
+                            }
+                        }
+
+                        tempSums[columnName] = sum;
+                    }
+
+                    // Если сет не пустой, записываем его суммы
+                    if (!isSetEmpty)
+                    {
+                        foreach (var kvp in tempSums)
+                        {
+                            if (columnMap.ContainsKey(kvp.Key))
+                            {
+                                string excelColumn = columnMap[kvp.Key];
+                                worksheet.Cells[64, excelColumn] = kvp.Value;
+                            }
+                        }
+                    }
+                }
 
                 workbook.Save();
                 workbook.Close();
