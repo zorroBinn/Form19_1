@@ -281,9 +281,9 @@
             this.tableLayoutPanel_Head.BackColor = System.Drawing.SystemColors.Window;
             this.tableLayoutPanel_Head.ColumnCount = 13;
             this.tableLayoutPanel_Head.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel_Head.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel_Head.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel_Head.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel_Head.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel_Head.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.5F));
+            this.tableLayoutPanel_Head.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.5F));
             this.tableLayoutPanel_Head.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel_Head.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel_Head.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -335,10 +335,10 @@
             this.button_next.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_next.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_next.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.button_next.Location = new System.Drawing.Point(1083, 35);
+            this.button_next.Location = new System.Drawing.Point(1082, 35);
             this.button_next.Margin = new System.Windows.Forms.Padding(0);
             this.button_next.Name = "button_next";
-            this.button_next.Size = new System.Drawing.Size(57, 35);
+            this.button_next.Size = new System.Drawing.Size(58, 35);
             this.button_next.TabIndex = 50;
             this.button_next.Text = ">>";
             this.button_next.UseVisualStyleBackColor = false;
@@ -351,10 +351,10 @@
             this.tableLayoutPanel_Head.SetColumnSpan(this.label54, 8);
             this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label54.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label54.Location = new System.Drawing.Point(684, 0);
+            this.label54.Location = new System.Drawing.Point(683, 0);
             this.label54.Margin = new System.Windows.Forms.Padding(0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(456, 35);
+            this.label54.Size = new System.Drawing.Size(457, 35);
             this.label54.TabIndex = 48;
             this.label54.Text = "Фамилия, имя, отчество";
             this.label54.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -366,10 +366,10 @@
             this.tableLayoutPanel_Head.SetColumnSpan(this.label41, 2);
             this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label41.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label41.Location = new System.Drawing.Point(1026, 70);
+            this.label41.Location = new System.Drawing.Point(1025, 70);
             this.label41.Margin = new System.Windows.Forms.Padding(0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(114, 35);
+            this.label41.Size = new System.Drawing.Size(115, 35);
             this.label41.TabIndex = 35;
             this.label41.Text = "недо-\r\nстача";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -381,7 +381,7 @@
             this.tableLayoutPanel_Head.SetColumnSpan(this.label40, 2);
             this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label40.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label40.Location = new System.Drawing.Point(912, 70);
+            this.label40.Location = new System.Drawing.Point(911, 70);
             this.label40.Margin = new System.Windows.Forms.Padding(0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(114, 35);
@@ -396,7 +396,7 @@
             this.tableLayoutPanel_Head.SetColumnSpan(this.label39, 2);
             this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label39.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label39.Location = new System.Drawing.Point(798, 70);
+            this.label39.Location = new System.Drawing.Point(797, 70);
             this.label39.Margin = new System.Windows.Forms.Padding(0);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(114, 35);
@@ -411,7 +411,7 @@
             this.tableLayoutPanel_Head.SetColumnSpan(this.label38, 2);
             this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label38.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label38.Location = new System.Drawing.Point(684, 70);
+            this.label38.Location = new System.Drawing.Point(683, 70);
             this.label38.Margin = new System.Windows.Forms.Padding(0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(114, 35);
@@ -425,7 +425,7 @@
             this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label37.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label37.Location = new System.Drawing.Point(627, 35);
+            this.label37.Location = new System.Drawing.Point(626, 35);
             this.label37.Margin = new System.Windows.Forms.Padding(0);
             this.label37.Name = "label37";
             this.tableLayoutPanel_Head.SetRowSpan(this.label37, 2);
@@ -440,11 +440,11 @@
             this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label36.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label36.Location = new System.Drawing.Point(570, 35);
+            this.label36.Location = new System.Drawing.Point(541, 35);
             this.label36.Margin = new System.Windows.Forms.Padding(0);
             this.label36.Name = "label36";
             this.tableLayoutPanel_Head.SetRowSpan(this.label36, 2);
-            this.label36.Size = new System.Drawing.Size(57, 70);
+            this.label36.Size = new System.Drawing.Size(85, 70);
             this.label36.TabIndex = 26;
             this.label36.Text = "наиме-\r\nнова-\r\nние";
             this.label36.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -456,10 +456,10 @@
             this.tableLayoutPanel_Head.SetColumnSpan(this.label35, 2);
             this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label35.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label35.Location = new System.Drawing.Point(570, 0);
+            this.label35.Location = new System.Drawing.Point(541, 0);
             this.label35.Margin = new System.Windows.Forms.Padding(0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(114, 35);
+            this.label35.Size = new System.Drawing.Size(142, 35);
             this.label35.TabIndex = 25;
             this.label35.Text = "Единица \r\nизмерения";
             this.label35.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -471,10 +471,10 @@
             this.tableLayoutPanel_Head.SetColumnSpan(this.label_9, 2);
             this.label_9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_9.Location = new System.Drawing.Point(1026, 105);
+            this.label_9.Location = new System.Drawing.Point(1025, 105);
             this.label_9.Margin = new System.Windows.Forms.Padding(0);
             this.label_9.Name = "label_9";
-            this.label_9.Size = new System.Drawing.Size(114, 15);
+            this.label_9.Size = new System.Drawing.Size(115, 15);
             this.label_9.TabIndex = 12;
             this.label_9.Text = "9";
             this.label_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -486,7 +486,7 @@
             this.tableLayoutPanel_Head.SetColumnSpan(this.label_8, 2);
             this.label_8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_8.Location = new System.Drawing.Point(912, 105);
+            this.label_8.Location = new System.Drawing.Point(911, 105);
             this.label_8.Margin = new System.Windows.Forms.Padding(0);
             this.label_8.Name = "label_8";
             this.label_8.Size = new System.Drawing.Size(114, 15);
@@ -501,7 +501,7 @@
             this.tableLayoutPanel_Head.SetColumnSpan(this.label_7, 2);
             this.label_7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_7.Location = new System.Drawing.Point(798, 105);
+            this.label_7.Location = new System.Drawing.Point(797, 105);
             this.label_7.Margin = new System.Windows.Forms.Padding(0);
             this.label_7.Name = "label_7";
             this.label_7.Size = new System.Drawing.Size(114, 15);
@@ -516,7 +516,7 @@
             this.tableLayoutPanel_Head.SetColumnSpan(this.label_6, 2);
             this.label_6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_6.Location = new System.Drawing.Point(684, 105);
+            this.label_6.Location = new System.Drawing.Point(683, 105);
             this.label_6.Margin = new System.Windows.Forms.Padding(0);
             this.label_6.Name = "label_6";
             this.label_6.Size = new System.Drawing.Size(114, 15);
@@ -530,7 +530,7 @@
             this.label_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_5.Location = new System.Drawing.Point(627, 105);
+            this.label_5.Location = new System.Drawing.Point(626, 105);
             this.label_5.Margin = new System.Windows.Forms.Padding(0);
             this.label_5.Name = "label_5";
             this.label_5.Size = new System.Drawing.Size(57, 15);
@@ -544,10 +544,10 @@
             this.label_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_4.Location = new System.Drawing.Point(570, 105);
+            this.label_4.Location = new System.Drawing.Point(541, 105);
             this.label_4.Margin = new System.Windows.Forms.Padding(0);
             this.label_4.Name = "label_4";
-            this.label_4.Size = new System.Drawing.Size(57, 15);
+            this.label_4.Size = new System.Drawing.Size(85, 15);
             this.label_4.TabIndex = 7;
             this.label_4.Text = "4";
             this.label_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -558,10 +558,10 @@
             this.label_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_3.Location = new System.Drawing.Point(513, 105);
+            this.label_3.Location = new System.Drawing.Point(456, 105);
             this.label_3.Margin = new System.Windows.Forms.Padding(0);
             this.label_3.Name = "label_3";
-            this.label_3.Size = new System.Drawing.Size(57, 15);
+            this.label_3.Size = new System.Drawing.Size(85, 15);
             this.label_3.TabIndex = 6;
             this.label_3.Text = "3";
             this.label_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -572,11 +572,11 @@
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(513, 35);
+            this.label15.Location = new System.Drawing.Point(456, 35);
             this.label15.Margin = new System.Windows.Forms.Padding(0);
             this.label15.Name = "label15";
             this.tableLayoutPanel_Head.SetRowSpan(this.label15, 2);
-            this.label15.Size = new System.Drawing.Size(57, 70);
+            this.label15.Size = new System.Drawing.Size(85, 70);
             this.label15.TabIndex = 5;
             this.label15.Text = "код";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -591,7 +591,7 @@
             this.label14.Location = new System.Drawing.Point(57, 0);
             this.label14.Margin = new System.Windows.Forms.Padding(0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(513, 35);
+            this.label14.Size = new System.Drawing.Size(484, 35);
             this.label14.TabIndex = 4;
             this.label14.Text = "Посуда и приборы";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -606,7 +606,7 @@
             this.label13.Margin = new System.Windows.Forms.Padding(0);
             this.label13.Name = "label13";
             this.tableLayoutPanel_Head.SetRowSpan(this.label13, 2);
-            this.label13.Size = new System.Drawing.Size(456, 70);
+            this.label13.Size = new System.Drawing.Size(399, 70);
             this.label13.TabIndex = 3;
             this.label13.Text = "наименование";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -649,7 +649,7 @@
             this.label_2.Location = new System.Drawing.Point(57, 105);
             this.label_2.Margin = new System.Windows.Forms.Padding(0);
             this.label_2.Name = "label_2";
-            this.label_2.Size = new System.Drawing.Size(456, 15);
+            this.label_2.Size = new System.Drawing.Size(399, 15);
             this.label_2.TabIndex = 2;
             this.label_2.Text = "2";
             this.label_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -660,7 +660,7 @@
             this.textBox_rab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox_rab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_rab.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox_rab.Location = new System.Drawing.Point(741, 35);
+            this.textBox_rab.Location = new System.Drawing.Point(740, 35);
             this.textBox_rab.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_rab.MaxLength = 150;
             this.textBox_rab.Multiline = true;
@@ -678,7 +678,7 @@
             this.button_prev.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_prev.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_prev.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_prev.Location = new System.Drawing.Point(684, 35);
+            this.button_prev.Location = new System.Drawing.Point(683, 35);
             this.button_prev.Margin = new System.Windows.Forms.Padding(0);
             this.button_prev.Name = "button_prev";
             this.button_prev.Size = new System.Drawing.Size(57, 35);
@@ -849,7 +849,6 @@
             // 
             this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -898,6 +897,7 @@
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.Size = new System.Drawing.Size(1141, 279);
             this.dataGridView.TabIndex = 57;
+            this.dataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellEndEdit);
             this.dataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellValueChanged);
             this.dataGridView.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_EditingControlShowing);
             this.dataGridView.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView_RowsAdded);
@@ -1050,36 +1050,39 @@
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column1.Width = 55;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "2";
-            this.Column2.MinimumWidth = 456;
+            this.Column2.MinimumWidth = 399;
             this.Column2.Name = "Column2";
             this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column2.Width = 399;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "3";
-            this.Column3.MaxInputLength = 20;
-            this.Column3.MinimumWidth = 57;
+            this.Column3.MinimumWidth = 85;
             this.Column3.Name = "Column3";
             this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.Width = 85;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "4";
-            this.Column4.MaxInputLength = 20;
-            this.Column4.MinimumWidth = 57;
+            this.Column4.MinimumWidth = 85;
             this.Column4.Name = "Column4";
             this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column4.Width = 85;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "5";
-            this.Column5.MaxInputLength = 6;
             this.Column5.MinimumWidth = 57;
             this.Column5.Name = "Column5";
+            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column5.Width = 57;
             // 
             // Column6_1
             // 
@@ -1087,6 +1090,7 @@
             this.Column6_1.MaxInputLength = 4;
             this.Column6_1.MinimumWidth = 114;
             this.Column6_1.Name = "Column6_1";
+            this.Column6_1.Width = 114;
             // 
             // Column6_2
             // 
@@ -1095,6 +1099,7 @@
             this.Column6_2.MinimumWidth = 114;
             this.Column6_2.Name = "Column6_2";
             this.Column6_2.Visible = false;
+            this.Column6_2.Width = 114;
             // 
             // Column6_3
             // 
@@ -1103,6 +1108,7 @@
             this.Column6_3.MinimumWidth = 114;
             this.Column6_3.Name = "Column6_3";
             this.Column6_3.Visible = false;
+            this.Column6_3.Width = 114;
             // 
             // Column6_4
             // 
@@ -1111,6 +1117,7 @@
             this.Column6_4.MinimumWidth = 114;
             this.Column6_4.Name = "Column6_4";
             this.Column6_4.Visible = false;
+            this.Column6_4.Width = 114;
             // 
             // Column7_1
             // 
@@ -1118,6 +1125,7 @@
             this.Column7_1.MaxInputLength = 4;
             this.Column7_1.MinimumWidth = 114;
             this.Column7_1.Name = "Column7_1";
+            this.Column7_1.Width = 114;
             // 
             // Column7_2
             // 
@@ -1126,6 +1134,7 @@
             this.Column7_2.MinimumWidth = 114;
             this.Column7_2.Name = "Column7_2";
             this.Column7_2.Visible = false;
+            this.Column7_2.Width = 114;
             // 
             // Column7_3
             // 
@@ -1134,6 +1143,7 @@
             this.Column7_3.MinimumWidth = 114;
             this.Column7_3.Name = "Column7_3";
             this.Column7_3.Visible = false;
+            this.Column7_3.Width = 114;
             // 
             // Column7_4
             // 
@@ -1141,6 +1151,7 @@
             this.Column7_4.MinimumWidth = 114;
             this.Column7_4.Name = "Column7_4";
             this.Column7_4.Visible = false;
+            this.Column7_4.Width = 114;
             // 
             // Column8_1
             // 
@@ -1148,6 +1159,7 @@
             this.Column8_1.MaxInputLength = 4;
             this.Column8_1.MinimumWidth = 114;
             this.Column8_1.Name = "Column8_1";
+            this.Column8_1.Width = 114;
             // 
             // Column8_2
             // 
@@ -1156,6 +1168,7 @@
             this.Column8_2.MinimumWidth = 114;
             this.Column8_2.Name = "Column8_2";
             this.Column8_2.Visible = false;
+            this.Column8_2.Width = 114;
             // 
             // Column8_3
             // 
@@ -1164,6 +1177,7 @@
             this.Column8_3.MinimumWidth = 114;
             this.Column8_3.Name = "Column8_3";
             this.Column8_3.Visible = false;
+            this.Column8_3.Width = 114;
             // 
             // Column8_4
             // 
@@ -1172,12 +1186,14 @@
             this.Column8_4.MinimumWidth = 114;
             this.Column8_4.Name = "Column8_4";
             this.Column8_4.Visible = false;
+            this.Column8_4.Width = 114;
             // 
             // Column9_1
             // 
             this.Column9_1.HeaderText = "9_1";
             this.Column9_1.MinimumWidth = 114;
             this.Column9_1.Name = "Column9_1";
+            this.Column9_1.Width = 114;
             // 
             // Column9_2
             // 
@@ -1186,6 +1202,7 @@
             this.Column9_2.MinimumWidth = 114;
             this.Column9_2.Name = "Column9_2";
             this.Column9_2.Visible = false;
+            this.Column9_2.Width = 114;
             // 
             // Column9_3
             // 
@@ -1194,6 +1211,7 @@
             this.Column9_3.MinimumWidth = 114;
             this.Column9_3.Name = "Column9_3";
             this.Column9_3.Visible = false;
+            this.Column9_3.Width = 114;
             // 
             // Column9_4
             // 
@@ -1202,6 +1220,7 @@
             this.Column9_4.MinimumWidth = 114;
             this.Column9_4.Name = "Column9_4";
             this.Column9_4.Visible = false;
+            this.Column9_4.Width = 114;
             // 
             // Main
             // 
@@ -1238,7 +1257,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Унифицированная форма № ОП-19";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
-            this.Load += new System.EventHandler(this.Main_Load);
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.tableLayoutPanel_Head.ResumeLayout(false);
             this.tableLayoutPanel_Head.PerformLayout();

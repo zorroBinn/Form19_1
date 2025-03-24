@@ -23,6 +23,9 @@ namespace Form19_1
         private string organizationBaseFilePath = "organizationBase.csv";
         private Dictionary<string, List<string>> organizationData = new Dictionary<string, List<string>>();
         private Dictionary<int, string> workersBySet = new Dictionary<int, string>();
+        private Dictionary<string, string> naimDictionary = new Dictionary<string, string>();
+        private Dictionary<string, string> eiDictionary = new Dictionary<string, string>();
+        private Dictionary<string, string> reverseEiDictionary = new Dictionary<string, string>();
 
         public Main()
         {
@@ -33,6 +36,9 @@ namespace Form19_1
             sumLabels = new System.Windows.Forms.Label[] { label_sum6, label_sum7, label_sum8, label_sum9 };
             nomberLabels = new System.Windows.Forms.Label[] { label_1, label_2, label_3, label_4, label_5, label_6, label_7, label_8, label_9 };
             LoadOrganizations();
+            UpdateRowNumbers();
+            LoadNaimBase();
+            LoadEiBase();
         }
 
         ///<summary>
@@ -73,9 +79,83 @@ namespace Form19_1
             comboBox_organiz.Items.AddRange(organizationData.Keys.ToArray());
         }
 
-        private void Main_Load(object sender, EventArgs e)
+        ///<summary>
+        ///Загрузка наименований и кодов посуды и приборов
+        ///</summary>
+        private void LoadNaimBase()
         {
-            UpdateRowNumbers();
+            string filePath = "naimBase.csv";
+            if (File.Exists(filePath))
+            {
+                string[] lines = File.ReadAllLines(filePath);
+                foreach (string line in lines)
+                {
+                    string[] parts = line.Split(';');
+                    if (parts.Length == 2)
+                    {
+                        string name = parts[0].Trim();
+                        string code = parts[1].Trim();
+                        if (!naimDictionary.ContainsKey(name))
+                        {
+                            naimDictionary[name] = code;
+                        }
+                    }
+                }
+            }
+        }
+
+        ///<summary>
+        ///Загрузка ЕИ и кодов
+        ///</summary>
+        private void LoadEiBase()
+        {
+            string filePath = "eiBase.csv";
+            if (File.Exists(filePath))
+            {
+                string[] lines = File.ReadAllLines(filePath);
+                foreach (string line in lines)
+                {
+                    string[] parts = line.Split(';');
+                    if (parts.Length == 2)
+                    {
+                        string unit = parts[0].Trim();
+                        string code = parts[1].Trim();
+
+                        if (!eiDictionary.ContainsKey(unit))
+                            eiDictionary[unit] = code;
+
+                        if (!reverseEiDictionary.ContainsKey(code))
+                            reverseEiDictionary[code] = unit;
+                    }
+                }
+            }
+
+            //Настраиваем инкрементный поиск
+            AutoCompleteStringCollection autoCompleteUnits = new AutoCompleteStringCollection();
+            autoCompleteUnits.AddRange(eiDictionary.Keys.ToArray());
+
+            AutoCompleteStringCollection autoCompleteCodes = new AutoCompleteStringCollection();
+            autoCompleteCodes.AddRange(reverseEiDictionary.Keys.ToArray());
+
+            //Применяем автодополнение при редактировании
+            dataGridView.EditingControlShowing += (s, e) =>
+            {
+                if (e.Control is TextBox textBox)
+                {
+                    if (dataGridView.CurrentCell.ColumnIndex == 3) //4-й столбец (единица измерения)
+                    {
+                        textBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                        textBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                        textBox.AutoCompleteCustomSource = autoCompleteUnits;
+                    }
+                    else if (dataGridView.CurrentCell.ColumnIndex == 4) //5-й столбец (код)
+                    {
+                        textBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                        textBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                        textBox.AutoCompleteCustomSource = autoCompleteCodes;
+                    }
+                }
+            };
         }
 
         private void dataGridView_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
@@ -278,6 +358,91 @@ namespace Form19_1
             File.WriteAllLines(organizationBaseFilePath, lines);
         }
 
+        ///<summary>
+        ///Запоминание вводимых объектов
+        ///</summary>
+        private void SaveNewNaimBaseEntries()
+        {
+            string filePath = "naimBase.csv";
+
+            //Загружаем текущие записи в HashSet (чтобы исключить дубли)
+            HashSet<string> existingEntries = new HashSet<string>();
+            if (File.Exists(filePath))
+            {
+                foreach (string line in File.ReadAllLines(filePath))
+                {
+                    existingEntries.Add(line.Trim());
+                }
+            }
+
+            List<string> newEntries = new List<string>();
+
+            foreach (DataGridViewRow row in dataGridView.Rows)
+            {
+                if (row.IsNewRow) continue; //Пропускаем пустую строку ввода
+
+                string name = row.Cells[1].Value?.ToString().Trim();
+                string code = row.Cells[2].Value?.ToString().Trim();
+
+                if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(code))
+                {
+                    string entry = $"{name};{code}";
+                    if (!existingEntries.Contains(entry))
+                    {
+                        newEntries.Add(entry);
+                    }
+                }
+            }
+
+            //Если есть новые записи, добавляем их в файл
+            if (newEntries.Count > 0)
+            {
+                File.AppendAllLines(filePath, newEntries);
+            }
+        }
+
+        ///<summary>
+        ///Запоминание вводимых ЕИ
+        ///</summary>
+        private void SaveNewEiBaseEntries()
+        {
+            string filePath = "eiBase.csv";
+
+            //Загружаем текущие записи в HashSet (чтобы исключить дубли)
+            HashSet<string> existingEntries = new HashSet<string>();
+            if (File.Exists(filePath))
+            {
+                foreach (string line in File.ReadAllLines(filePath))
+                {
+                    existingEntries.Add(line.Trim());
+                }
+            }
+
+            List<string> newEntries = new List<string>();
+
+            foreach (DataGridViewRow row in dataGridView.Rows)
+            {
+                if (row.IsNewRow) continue;
+
+                string unit = row.Cells[3].Value?.ToString().Trim();
+                string code = row.Cells[4].Value?.ToString().Trim();
+
+                if (!string.IsNullOrEmpty(unit) && !string.IsNullOrEmpty(code))
+                {
+                    string entry = $"{unit};{code}";
+                    if (!existingEntries.Contains(entry))
+                    {
+                        newEntries.Add(entry);
+                    }
+                }
+            }
+
+            if (newEntries.Count > 0)
+            {
+                File.AppendAllLines(filePath, newEntries);
+            }
+        }
+
         private void button_form_Click(object sender, EventArgs e)
         {
             string org = comboBox_organiz.Text.Trim();
@@ -308,6 +473,8 @@ namespace Form19_1
                     }
                     SaveOrganizations();
                 }
+                SaveNewNaimBaseEntries();
+                SaveNewEiBaseEntries();
                 using (SaveFileDialog saveFileDialog = new SaveFileDialog())
                 {
                     saveFileDialog.Filter = "Excel Files|*.xls";
@@ -347,10 +514,30 @@ namespace Form19_1
 
             try
             {
-                //Функция для получения названия месяца в родительном падеже
+                //Функция для получения названия месяца 
                 string GetMonthName(DateTime date)
                 {
                     return date.ToString("MMMM", new CultureInfo("ru-RU"));
+                }
+                //Функция для получения названия месяца в родительном падеже
+                string GetMonthNameRP(string month)
+                {
+                    switch (month)
+                    {
+                        case "Январь": return "января";
+                        case "Февраль": return "февраля";
+                        case "Март": return "марта";
+                        case "Апрель": return "апреля";
+                        case "Май": return "мая";
+                        case "Июнь": return "июня";
+                        case "Июль": return "июля";
+                        case "Август": return "августа";
+                        case "Сентябрь": return "сентября";
+                        case "Октябрь": return "октября";
+                        case "Ноябрь": return "ноября";
+                        case "Декабрь": return "декабря";
+                        default: return month;
+                    }
                 }
 
                 //Заполняем ячейки по заданным координатам
@@ -359,8 +546,8 @@ namespace Form19_1
                 worksheet.Cells[6, 69] = textBox_OKPO.Text.Trim(); //BQ6
                 worksheet.Cells[9, 69] = textBox_OKDP.Text.Trim(); //BQ9
 
-                worksheet.Cells[18, 25] = dateTimePicker_S.Value.Day + " " + GetMonthName(dateTimePicker_S.Value); //Y18 (день месяц)
-                worksheet.Cells[18, 39] = dateTimePicker_PO.Value.Day + " " + GetMonthName(dateTimePicker_PO.Value); //AM18 (день месяц)
+                worksheet.Cells[18, 25] = dateTimePicker_S.Value.Day + " " + GetMonthNameRP(GetMonthName(dateTimePicker_S.Value)); //Y18 (день месяц)
+                worksheet.Cells[18, 39] = dateTimePicker_PO.Value.Day + " " + GetMonthNameRP(GetMonthName(dateTimePicker_PO.Value)); //AM18 (день месяц)
                 worksheet.Cells[18, 52] = dateTimePicker_S.Value.Year; //AZ18 (год)
 
                 worksheet.Cells[35, 57] = dateTimePicker.Value.Day; //BE35 (день)
@@ -396,14 +583,14 @@ namespace Form19_1
                 }
 
                 int maxRows = Math.Min(20, dataGridView.Rows.Count);
-                int excelRowStart = 44; // Начальная строка в Excel
+                int excelRowStart = 44; //Начальная строка в Excel
                 List<string> orderedColumns = new List<string>();
-                // Добавляем сначала первые 5 столбцов (Column1 - Column5)
+                //Добавляем сначала первые 5 столбцов (Column1 - Column5)
                 for (int i = 1; i <= 5; i++)
                 {
                     orderedColumns.Add($"Column{i}");
                 }
-                // Затем добавляем столбцы по сетам (Column6_1 - Column9_4)
+                //Затем добавляем столбцы по сетам (Column6_1 - Column9_4)
                 for (int set = 1; set <= 4; set++)
                 {
                     for (int col = 6; col <= 9; col++)
@@ -411,7 +598,7 @@ namespace Form19_1
                         orderedColumns.Add($"Column{col}_{set}");
                     }
                 }
-                // Сопоставление с колонками Excel
+                //Сопоставление с колонками Excel
                 Dictionary<string, string> columnMap = new Dictionary<string, string>
                 {
                     { "Column1", "A" }, { "Column2", "E" }, { "Column3", "O" }, { "Column4", "R" }, { "Column5", "U" },
@@ -423,7 +610,7 @@ namespace Form19_1
                 Dictionary<string, double> columnSums = new Dictionary<string, double>(); //Словарь для хранения сумм по каждому столбцу
                 for (int rowIndex = 0; rowIndex < maxRows; rowIndex++)
                 {
-                    int excelRow = excelRowStart + rowIndex; // Excel строки 44-63
+                    int excelRow = excelRowStart + rowIndex; //Excel строки 44-63
 
                     foreach (string columnName in orderedColumns)
                     {
@@ -437,13 +624,13 @@ namespace Form19_1
                     }
                 }
 
-                // Подсчитываем суммы по каждому столбцу сетов
-                foreach (int set in new int[] { 1, 2, 3, 4 }) // Перебираем 4 сета
+                //Подсчитываем суммы по каждому столбцу сетов
+                foreach (int set in new int[] { 1, 2, 3, 4 }) //Перебираем 4 сета
                 {
-                    bool isSetEmpty = true; // Флаг, пуст ли сет полностью
-                    Dictionary<string, double> tempSums = new Dictionary<string, double>(); // Временное хранилище сумм столбцов сета
+                    bool isSetEmpty = true; //Флаг, пуст ли сет полностью
+                    Dictionary<string, double> tempSums = new Dictionary<string, double>(); //Временное хранилище сумм столбцов сета
 
-                    for (int col = 6; col <= 9; col++) // Перебираем столбцы Column6_X - Column9_X
+                    for (int col = 6; col <= 9; col++) //Перебираем столбцы Column6_X - Column9_X
                     {
                         string columnName = $"Column{col}_{set}";
 
@@ -458,14 +645,14 @@ namespace Form19_1
                                 double.TryParse(dataGridView.Rows[rowIndex].Cells[colIndex].Value.ToString(), out double value))
                             {
                                 sum += value;
-                                isSetEmpty = false; // Нашли хотя бы одно число — сет не пустой
+                                isSetEmpty = false; //Нашли хотя бы одно число — сет не пустой
                             }
                         }
 
                         tempSums[columnName] = sum;
                     }
 
-                    // Если сет не пустой, записываем его суммы
+                    //Если сет не пустой, записываем его суммы
                     if (!isSetEmpty)
                     {
                         foreach (var kvp in tempSums)
@@ -673,6 +860,40 @@ namespace Form19_1
                 if (colName == "Column3" || colName == "Column5")
                     textBox.KeyPress += textBox_OKDP_KeyPress;
             }
+            if (e.Control is TextBox textBox1)
+            {
+                // Очищаем старые события перед добавлением новых
+                textBox1.AutoCompleteMode = AutoCompleteMode.None;
+                textBox1.AutoCompleteSource = AutoCompleteSource.None;
+                textBox1.AutoCompleteCustomSource = null;
+
+                int columnIndex = dataGridView.CurrentCell.ColumnIndex;
+
+                if (columnIndex == 1) // Второй столбец (Наименование)
+                {
+                    textBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                    textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+                    AutoCompleteStringCollection autoComplete = new AutoCompleteStringCollection();
+                    autoComplete.AddRange(naimDictionary.Keys.ToArray());
+
+                    textBox1.AutoCompleteCustomSource = autoComplete;
+                }
+                else if (columnIndex == 3) // 4-й столбец (Единица измерения)
+                {
+                    textBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                    textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                    textBox1.AutoCompleteCustomSource = new AutoCompleteStringCollection();
+                    textBox1.AutoCompleteCustomSource.AddRange(eiDictionary.Keys.ToArray());
+                }
+                else if (columnIndex == 4) // 5-й столбец (Код единицы измерения)
+                {
+                    textBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                    textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                    textBox1.AutoCompleteCustomSource = new AutoCompleteStringCollection();
+                    textBox1.AutoCompleteCustomSource.AddRange(reverseEiDictionary.Keys.ToArray());
+                }
+            }
         }
 
         private void OnlyNumbers_KeyPress(object sender, KeyPressEventArgs e)
@@ -739,6 +960,34 @@ namespace Form19_1
         private void textBox_rab_TextChanged(object sender, EventArgs e)
         {
             workersBySet[currentSet] = textBox_rab.Text.Trim();
+        }
+
+        private void dataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 1) //Второй столбец (наименование)
+            {
+                string enteredName = dataGridView.Rows[e.RowIndex].Cells[1].Value?.ToString().Trim();
+                if (!string.IsNullOrEmpty(enteredName) && naimDictionary.ContainsKey(enteredName))
+                {
+                    dataGridView.Rows[e.RowIndex].Cells[2].Value = naimDictionary[enteredName];
+                }
+            }
+            if (e.ColumnIndex == 3) //4-й столбец (единица измерения)
+            {
+                string enteredUnit = dataGridView.Rows[e.RowIndex].Cells[3].Value?.ToString().Trim();
+                if (!string.IsNullOrEmpty(enteredUnit) && eiDictionary.ContainsKey(enteredUnit))
+                {
+                    dataGridView.Rows[e.RowIndex].Cells[4].Value = eiDictionary[enteredUnit]; //Подставляем код
+                }
+            }
+            else if (e.ColumnIndex == 4) //5-й столбец (код)
+            {
+                string enteredCode = dataGridView.Rows[e.RowIndex].Cells[4].Value?.ToString().Trim();
+                if (!string.IsNullOrEmpty(enteredCode) && reverseEiDictionary.ContainsKey(enteredCode))
+                {
+                    dataGridView.Rows[e.RowIndex].Cells[3].Value = reverseEiDictionary[enteredCode]; //Подставляем единицу измерения
+                }
+            }
         }
     }
 }
