@@ -541,18 +541,18 @@ namespace Form19_1
                 }
 
                 //Заполняем ячейки по заданным координатам
-                worksheet.Cells[6, 1] = comboBox_organiz.Text.Trim(); //A6
-                worksheet.Cells[8, 1] = comboBox_podrazdel.Text.Trim(); //A8
-                worksheet.Cells[6, 69] = textBox_OKPO.Text.Trim(); //BQ6
-                worksheet.Cells[9, 69] = textBox_OKDP.Text.Trim(); //BQ9
+                worksheet.Cells[6, 1] = comboBox_organiz.Text.Trim(); 
+                worksheet.Cells[8, 1] = comboBox_podrazdel.Text.Trim(); 
+                worksheet.Cells[6, 69] = textBox_OKPO.Text.Trim(); 
+                worksheet.Cells[9, 69] = textBox_OKDP.Text.Trim(); 
 
-                worksheet.Cells[18, 25] = dateTimePicker_S.Value.Day + " " + GetMonthNameRP(GetMonthName(dateTimePicker_S.Value)); //Y18 (день месяц)
-                worksheet.Cells[18, 39] = dateTimePicker_PO.Value.Day + " " + GetMonthNameRP(GetMonthName(dateTimePicker_PO.Value)); //AM18 (день месяц)
-                worksheet.Cells[18, 52] = dateTimePicker_S.Value.Year; //AZ18 (год)
+                worksheet.Cells[18, 21] = dateTimePicker_S.Value.Day + " " + GetMonthNameRP(GetMonthName(dateTimePicker_S.Value)); //день месяц
+                worksheet.Cells[18, 37] = dateTimePicker_PO.Value.Day + " " + GetMonthNameRP(GetMonthName(dateTimePicker_PO.Value)); //день месяц
+                worksheet.Cells[18, 50] = dateTimePicker_S.Value.Year; //год
 
-                worksheet.Cells[35, 57] = dateTimePicker.Value.Day; //BE35 (день)
-                worksheet.Cells[35, 59] = GetMonthName(dateTimePicker.Value); //BG35 (месяц)
-                worksheet.Cells[35, 70] = dateTimePicker.Value.Year; //BR35 (год)
+                worksheet.Cells[35, 56] = dateTimePicker.Value.Day; //день
+                worksheet.Cells[35, 59] = GetMonthName(dateTimePicker.Value); //месяц
+                worksheet.Cells[35, 70] = dateTimePicker.Value.Year; //год
 
                 //Читаем данные из файла подписей
                 string podpisFile = "00p11o22d33p44i55s66.csv";
@@ -561,7 +561,7 @@ namespace Form19_1
                     string[] podpisLines = File.ReadAllLines(podpisFile);
                     if (podpisLines.Length >= 4)
                     {
-                        worksheet.Cells[23, 25] = podpisLines[0].Trim(); //Y23
+                        worksheet.Cells[23, 24] = podpisLines[0].Trim(); //Y23
                         worksheet.Cells[23, 37] = podpisLines[1].Trim(); //AK23
                         worksheet.Cells[67, 19] = podpisLines[2].Trim(); //S67
                         worksheet.Cells[67, 45] = podpisLines[3].Trim(); //AS67
