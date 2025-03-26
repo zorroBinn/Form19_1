@@ -582,7 +582,7 @@ namespace Form19_1
                     }
                 }
 
-                int maxRows = Math.Min(20, dataGridView.Rows.Count);
+                int maxRows = Math.Min(20, dataGridView.Rows.Count-1);
                 int excelRowStart = 44; //Начальная строка в Excel
                 List<string> orderedColumns = new List<string>();
                 //Добавляем сначала первые 5 столбцов (Column1 - Column5)
@@ -607,7 +607,7 @@ namespace Form19_1
                     { "Column6_3", "AY" }, { "Column7_3", "BB" }, { "Column8_3", "BF" }, { "Column9_3", "BI" },
                     { "Column6_4", "BL" }, { "Column7_4", "BO" }, { "Column8_4", "BS" }, { "Column9_4", "BV" }
                 };
-                Dictionary<string, double> columnSums = new Dictionary<string, double>(); //Словарь для хранения сумм по каждому столбцу
+
                 for (int rowIndex = 0; rowIndex < maxRows; rowIndex++)
                 {
                     int excelRow = excelRowStart + rowIndex; //Excel строки 44-63
@@ -622,6 +622,7 @@ namespace Form19_1
                             worksheet.Cells[excelRow, excelColumn] = dataGridView.Rows[rowIndex].Cells[colIndex].Value.ToString();
                         }
                     }
+                    worksheet.Rows[excelRow].RowHeight = 25; //Устанавливаем высоту строки 25
                 }
 
                 //Подсчитываем суммы по каждому столбцу сетов
@@ -862,14 +863,14 @@ namespace Form19_1
             }
             if (e.Control is TextBox textBox1)
             {
-                // Очищаем старые события перед добавлением новых
+                //Очищаем старые события перед добавлением новых
                 textBox1.AutoCompleteMode = AutoCompleteMode.None;
                 textBox1.AutoCompleteSource = AutoCompleteSource.None;
                 textBox1.AutoCompleteCustomSource = null;
 
                 int columnIndex = dataGridView.CurrentCell.ColumnIndex;
 
-                if (columnIndex == 1) // Второй столбец (Наименование)
+                if (columnIndex == 1) //Второй столбец (Наименование)
                 {
                     textBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
                     textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
@@ -879,14 +880,14 @@ namespace Form19_1
 
                     textBox1.AutoCompleteCustomSource = autoComplete;
                 }
-                else if (columnIndex == 3) // 4-й столбец (Единица измерения)
+                else if (columnIndex == 3) //4-й столбец (Единица измерения)
                 {
                     textBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
                     textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
                     textBox1.AutoCompleteCustomSource = new AutoCompleteStringCollection();
                     textBox1.AutoCompleteCustomSource.AddRange(eiDictionary.Keys.ToArray());
                 }
-                else if (columnIndex == 4) // 5-й столбец (Код единицы измерения)
+                else if (columnIndex == 4) //5-й столбец (Код единицы измерения)
                 {
                     textBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
                     textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
